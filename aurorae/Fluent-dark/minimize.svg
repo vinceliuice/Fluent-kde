@@ -1,0 +1,28 @@
+<svg width="22" height="22" enable-background="new" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g id="pressed-center">
+  <g transform="translate(46)">
+   <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  </g>
+  <circle cx="57" cy="11" r="11" fill="#ffffff" opacity=".25"/>
+  <rect transform="scale(1,-1)" x="52" y="-12" width="10" height="1" fill="#dedede" fill-rule="evenodd"/>
+ </g>
+ <g id="hover-center">
+  <g transform="translate(23)">
+   <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  </g>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".15"/>
+  <rect transform="scale(1,-1)" x="29" y="-12" width="10" height="1" fill="#dedede" fill-rule="evenodd"/>
+ </g>
+ <g id="active-center">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path d="m6 11v1h10v-1z" fill="#dedede" fill-rule="evenodd"/>
+ </g>
+ <g id="inactive-center" transform="translate(69)">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path d="m6 11v1h10v-1z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+ </g>
+ <g id="deactivated-center" transform="translate(92)">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path d="m6 11v1h10v-1z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+ </g>
+</svg>
