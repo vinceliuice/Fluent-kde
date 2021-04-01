@@ -1,14 +1,14 @@
 [kcminputrc][Mouse]
-cursorTheme=Fluent
+cursorTheme=Fluent-dark
 
 [kdeglobals][General]
-ColorScheme=FluentLight
+ColorScheme=FluentDark
 
 [kdeglobals][Icons]
 Theme=Fluent
 
 [kdeglobals][KDE]
-widgetStyle=kvantum
+widgetStyle=Breeze
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop
@@ -19,8 +19,8 @@ LayoutName=org.kde.breeze.desktop
 [kwinrc][org.kde.kdecoration2]
 ButtonsOnLeft=
 ButtonsOnRight=IAX
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Fluent
+library=org.kde.breeze
+theme=Breeze
 
 [plasmarc][Theme]
-name=Fluent
+name=Fluent-dark
