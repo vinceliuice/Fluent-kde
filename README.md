@@ -15,6 +15,8 @@ In this repository you'll find:
 ./install.sh
 ```
 
+After installation you can add new `Fluent panel` on desktop
+
 ## Recommendations
 
 - For better looking please use this pack with [Kvantum engine](https://github.com/tsujan/Kvantum/tree/master/Kvantum).
@@ -22,6 +24,10 @@ In this repository you'll find:
   Run `kvantummanager` to choose and apply **Fluent** theme.
 
 - Install [Fluent icon theme](https://github.com/vinceliuice/Fluent-icon-theme) for a more consistent and beautiful experience.
+
+- Split Digital Clock `Font size set to 35%`
+
+- Win7 Show Desktop `You can change the edge color`
 
 ## Donate
 

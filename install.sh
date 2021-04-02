@@ -1,24 +1,16 @@
 #!/bin/bash
 
 SRC_DIR=$(cd $(dirname $0) && pwd)
-ROOT_UID=0
 
 # Destination directory
-if [ "$UID" -eq "$ROOT_UID" ]; then
-  AURORAE_DIR="/usr/share/aurorae/themes"
-  SCHEMES_DIR="/usr/share/color-schemes"
-  PLASMA_DIR="/usr/share/plasma/desktoptheme"
-  LOOKFEEL_DIR="/usr/share/plasma/look-and-feel"
-  KVANTUM_DIR="/usr/share/Kvantum"
-  WALLPAPER_DIR="/usr/share/wallpapers"
-else
-  AURORAE_DIR="$HOME/.local/share/aurorae/themes"
-  SCHEMES_DIR="$HOME/.local/share/color-schemes"
-  PLASMA_DIR="$HOME/.local/share/plasma/desktoptheme"
-  LOOKFEEL_DIR="$HOME/.local/share/plasma/look-and-feel"
-  KVANTUM_DIR="$HOME/.config/Kvantum"
-  WALLPAPER_DIR="$HOME/.local/share/wallpapers"
-fi
+AURORAE_DIR="$HOME/.local/share/aurorae/themes"
+SCHEMES_DIR="$HOME/.local/share/color-schemes"
+PLASMA_DIR="$HOME/.local/share/plasma/desktoptheme"
+LOOKFEEL_DIR="$HOME/.local/share/plasma/look-and-feel"
+KVANTUM_DIR="$HOME/.config/Kvantum"
+WALLPAPER_DIR="$HOME/.local/share/wallpapers"
+PLASMOIDS_DIR="$HOME/.local/share/plasma/plasmoids"
+LAYOUT_DIR="$HOME/.local/share/plasma/layout-templates"
 
 THEME_NAME=Fluent
 
@@ -46,19 +38,21 @@ install() {
   [[ -d ${KVANTUM_DIR}/${name} ]] && rm -rf ${KVANTUM_DIR}/${name}*
   [[ -d ${WALLPAPER_DIR}/${name} ]] && rm -rf ${WALLPAPER_DIR}/${name}
 
-  cp -r ${SRC_DIR}/aurorae/*                                                         ${AURORAE_DIR}
-  cp -r ${SRC_DIR}/color-schemes/*.colors                                            ${SCHEMES_DIR}
-  cp -r ${SRC_DIR}/Kvantum/*                                                         ${KVANTUM_DIR}
-  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}
-  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-light
-  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent-light/widgets/*.svgz                   ${PLASMA_DIR}/${name}-light/widgets
-  sed -i "s|Name=Fluent|Name=${name}-light|"                                         ${PLASMA_DIR}/${name}-light/metadata.desktop
-  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-dark
-  sed -i "s|Name=Fluent|Name=${name}-dark|"                                          ${PLASMA_DIR}/${name}-dark/metadata.desktop
-  cp -r ${SRC_DIR}/color-schemes/FluentLight.colors                                  ${PLASMA_DIR}/${name}-light/colors
-  cp -r ${SRC_DIR}/color-schemes/FluentDark.colors                                   ${PLASMA_DIR}/${name}-dark/colors
-  cp -r ${SRC_DIR}/plasma/look-and-feel/*                                            ${LOOKFEEL_DIR}
-  cp -r ${SRC_DIR}/wallpaper/*                                                       ${WALLPAPER_DIR}
+  cp -ur ${SRC_DIR}/aurorae/*                                                         ${AURORAE_DIR}
+  cp -ur ${SRC_DIR}/color-schemes/*.colors                                            ${SCHEMES_DIR}
+  cp -ur ${SRC_DIR}/Kvantum/*                                                         ${KVANTUM_DIR}
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-light
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent-light/widgets/*.svgz                   ${PLASMA_DIR}/${name}-light/widgets
+  sed -i "s|Name=Fluent|Name=${name}-light|"                                          ${PLASMA_DIR}/${name}-light/metadata.desktop
+  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-dark
+  sed -i "s|Name=Fluent|Name=${name}-dark|"                                           ${PLASMA_DIR}/${name}-dark/metadata.desktop
+  cp -ur ${SRC_DIR}/color-schemes/FluentLight.colors                                  ${PLASMA_DIR}/${name}-light/colors
+  cp -ur ${SRC_DIR}/color-schemes/FluentDark.colors                                   ${PLASMA_DIR}/${name}-dark/colors
+  cp -ur ${SRC_DIR}/plasma/look-and-feel/*                                            ${LOOKFEEL_DIR}
+  cp -ur ${SRC_DIR}/wallpaper/*                                                       ${WALLPAPER_DIR}
+  cp -ur ${SRC_DIR}/plasma/plasmoids/*                                                ${PLASMOIDS_DIR}
+  cp -ur ${SRC_DIR}/plasma/layout-templates/*                                         ${LAYOUT_DIR}
 }
 
 while [[ $# -gt 0 ]]; do
