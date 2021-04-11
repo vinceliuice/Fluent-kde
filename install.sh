@@ -38,19 +38,19 @@ install() {
   [[ -d ${KVANTUM_DIR}/${name} ]] && rm -rf ${KVANTUM_DIR}/${name}*
   [[ -d ${WALLPAPER_DIR}/${name} ]] && rm -rf ${WALLPAPER_DIR}/${name}
 
-  cp -ur ${SRC_DIR}/aurorae/*                                                         ${AURORAE_DIR}
-  cp -ur ${SRC_DIR}/color-schemes/*.colors                                            ${SCHEMES_DIR}
-  cp -ur ${SRC_DIR}/Kvantum/*                                                         ${KVANTUM_DIR}
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-light
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent-light/widgets/*.svgz                   ${PLASMA_DIR}/${name}-light/widgets
+  cp -r ${SRC_DIR}/aurorae/*                                                          ${AURORAE_DIR}
+  cp -r ${SRC_DIR}/color-schemes/*.colors                                             ${SCHEMES_DIR}
+  cp -r ${SRC_DIR}/Kvantum/*                                                          ${KVANTUM_DIR}
+  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                         ${PLASMA_DIR}
+  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                         ${PLASMA_DIR}/${name}-light
+  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent-light/widgets/*.svgz                    ${PLASMA_DIR}/${name}-light/widgets
   sed -i "s|Name=Fluent|Name=${name}-light|"                                          ${PLASMA_DIR}/${name}-light/metadata.desktop
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/Fluent                                        ${PLASMA_DIR}/${name}-dark
+  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent                                         ${PLASMA_DIR}/${name}-dark
   sed -i "s|Name=Fluent|Name=${name}-dark|"                                           ${PLASMA_DIR}/${name}-dark/metadata.desktop
-  cp -ur ${SRC_DIR}/color-schemes/FluentLight.colors                                  ${PLASMA_DIR}/${name}-light/colors
-  cp -ur ${SRC_DIR}/color-schemes/FluentDark.colors                                   ${PLASMA_DIR}/${name}-dark/colors
-  cp -ur ${SRC_DIR}/plasma/look-and-feel/*                                            ${LOOKFEEL_DIR}
-  cp -ur ${SRC_DIR}/wallpaper/*                                                       ${WALLPAPER_DIR}
+  cp -r ${SRC_DIR}/color-schemes/FluentLight.colors                                   ${PLASMA_DIR}/${name}-light/colors
+  cp -r ${SRC_DIR}/color-schemes/FluentDark.colors                                    ${PLASMA_DIR}/${name}-dark/colors
+  cp -r ${SRC_DIR}/plasma/look-and-feel/*                                             ${LOOKFEEL_DIR}
+  cp -r ${SRC_DIR}/wallpaper/*                                                        ${WALLPAPER_DIR}
   cp -ur ${SRC_DIR}/plasma/plasmoids/*                                                ${PLASMOIDS_DIR}
   cp -ur ${SRC_DIR}/plasma/layout-templates/*                                         ${LAYOUT_DIR}
 }

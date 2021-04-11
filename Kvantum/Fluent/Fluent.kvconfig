@@ -25,7 +25,7 @@ tickless_slider_handle_size=22
 center_toolbar_handle=true
 check_size=20
 textless_progressbar=false
-progressbar_thickness=16
+progressbar_thickness=10
 menubar_mouse_tracking=true
 toolbutton_style=0
 double_click=false
@@ -457,10 +457,10 @@ frame=false
 
 [Menu]
 inherits=PanelButtonCommand
-frame.top=3
-frame.bottom=3
-frame.left=3
-frame.right=3
+frame.top=8
+frame.bottom=8
+frame.left=8
+frame.right=8
 frame.element=menu
 interior.element=menu
 text.normal.color=#444444
