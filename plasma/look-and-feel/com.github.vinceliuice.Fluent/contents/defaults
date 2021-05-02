@@ -23,4 +23,4 @@ library=org.kde.breeze
 theme=Breeze
 
 [plasmarc][Theme]
-name=Fluent-dark
+name=Fluent
