@@ -8,9 +8,9 @@ import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
 SessionManagementScreen {
-
     property bool showUsernamePrompt: !showUserList
     property int usernameFontSize
+    property int fontSize: parseInt(config.fontSize)
     property string usernameFontColor
     property string lastUserName
     property bool passwordFieldOutlined: config.PasswordFieldOutlined == "true"
@@ -26,10 +26,6 @@ SessionManagementScreen {
         }
     }
 
-    /*
-    * Login has been requested with the following username and password
-    * If username field is visible, it will be taken from that, otherwise from the "name" property of the currentIndex
-    */
     function startLogin() {
         var username = showUsernamePrompt ? userNameInput.text : userList.selectedUser
         var password = passwordBox.text
@@ -41,10 +37,7 @@ SessionManagementScreen {
     PlasmaComponents.TextField {
         id: userNameInput
         Layout.fillWidth: true
-        Layout.minimumHeight: 32
-        implicitHeight: usernameFontSize * 2.85
-        font.pointSize: usernameFontSize * 0.8
-        font.family: config.Font || "Noto Sans"
+        font.pointSize: fontSize + 1
         opacity: 1.0
         text: lastUserName
         visible: showUsernamePrompt
@@ -66,11 +59,8 @@ SessionManagementScreen {
     PlasmaComponents.TextField {
         id: passwordBox
         Layout.fillWidth: true
-        Layout.minimumHeight: 32
-        implicitHeight: usernameFontSize * 2.85
-        font.pointSize: usernameFontSize * 0.8
+        font.pointSize: fontSize + 1
         opacity: passwordFieldOutlined ? 1.0 : 1.0
-        font.family: config.Font || "Noto Sans"
         placeholderText: config.PasswordFieldPlaceholderText == "Password" ? i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Password") : config.PasswordFieldPlaceholderText
         focus: !showUsernamePrompt || lastUserName
         echoMode: TextInput.Password
