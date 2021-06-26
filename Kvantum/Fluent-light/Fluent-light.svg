@@ -1,100 +1,100 @@
 <svg width="450" height="1e3" version="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <path id="combo-focused" class="ColorScheme-Highlight" d="m328 91v18h24v-18z" color="#0078D4" fill="#ffffff" stroke-width=".43301"/>
+ <path id="combo-focused" class="ColorScheme-Highlight" d="m328 91v18h24v-18z" fill="#ffffff" stroke-width=".43301"/>
  <g id="combo-focused-topleft" transform="matrix(.5 0 0 .5 231.93 -324.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2z" fill="#000000" opacity=".35"/>
  </g>
  <g id="combo-focused-top" transform="matrix(.1832 0 0 .49999 293.17 -324.92)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" color="#0078D4" fill="#ffffff" stroke-width="1.0004"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" color="#0078D4" fill="#000000" opacity=".35" stroke-width=".70647"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" fill="#ffffff" stroke-width="1.0004"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" fill="#000000" opacity=".35" stroke-width=".70647"/>
  </g>
  <g id="combo-focused-topright" transform="matrix(-.5 0 0 .5 448.07 -324.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".35"/>
  </g>
  <g id="combo-focused-left" transform="matrix(0 -.1374 .49999 0 -87.922 135.13)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".35" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".35" stroke-width=".70707"/>
  </g>
  <g id="combo-focused-right" transform="matrix(0 .1374 -.49999 0 767.92 64.874)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".35" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".35" stroke-width=".70708"/>
  </g>
  <g id="combo-focused-bottom" transform="matrix(.18321 0 0 -.5 293.17 524.93)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" color="#0078D4" fill="#ffffff" stroke-width=".99996"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".35" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" fill="#ffffff" stroke-width=".99996"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".35" stroke-width=".70708"/>
  </g>
  <g id="combo-focused-bottomleft" transform="matrix(.5 0 0 -.5 231.93 524.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,-2,-389.86,913.86)" d="m287 42c0 1.662 1.338 3 3 3v-1c-1.108 0-2-0.892-2-2z" fill="#000000" opacity=".35"/>
  </g>
  <g id="combo-focused-bottomright" transform="matrix(-.5 0 0 -.5 448.07 524.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,-2,822.14,913.86)" d="m318 42c0 1.108-0.892 2-2 2v1c1.662 0 3-1.338 3-3z" fill="#000000" opacity=".35"/>
  </g>
- <path id="combo-normal" class="ColorScheme-Highlight" d="m291 91v18h24v-18z" color="#0078D4" fill="#ffffff" stroke-width=".43301"/>
+ <path id="combo-normal" class="ColorScheme-Highlight" d="m291 91v18h24v-18z" fill="#ffffff" stroke-width=".43301"/>
  <g id="combo-normal-topleft" transform="matrix(.5 0 0 .5 194.93 -324.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2z" fill="#000000" opacity=".15"/>
  </g>
  <g id="combo-normal-top" transform="matrix(.1832 0 0 .49999 256.17 -324.92)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" color="#0078D4" fill="#ffffff" stroke-width="1.0004"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70647"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" fill="#ffffff" stroke-width="1.0004"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" fill="#000000" opacity=".15" stroke-width=".70647"/>
  </g>
  <g id="combo-normal-topright" transform="matrix(-.5 0 0 .5 411.07 -324.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".15"/>
  </g>
  <g id="combo-normal-left" transform="matrix(0 -.1374 .49999 0 -124.92 135.13)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="combo-normal-right" transform="matrix(0 .1374 -.49999 0 730.92 64.874)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
  <g id="combo-normal-bottom" transform="matrix(.18321 0 0 -.5 256.17 524.93)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" color="#0078D4" fill="#ffffff" stroke-width=".99996"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" fill="#ffffff" stroke-width=".99996"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
  <g id="combo-normal-bottomleft" transform="matrix(.5 0 0 -.5 194.93 524.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,-2,-389.86,913.86)" d="m287 42c0 1.662 1.338 3 3 3v-1c-1.108 0-2-0.892-2-2z" fill="#000000" opacity=".15"/>
  </g>
  <g id="combo-normal-bottomright" transform="matrix(-.5 0 0 -.5 411.07 524.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,-2,822.14,913.86)" d="m318 42c0 1.108-0.892 2-2 2v1c1.662 0 3-1.338 3-3z" fill="#000000" opacity=".15"/>
  </g>
  <rect id="progress-normal-top" x="63" y="167" width="12" height="6" fill="#000000" opacity=".15" stroke-width=".70711"/>
@@ -364,94 +364,94 @@
    <path d="m9.0003 47.939a6 6 0 0 0-6 6h6z" color="#000000" color-rendering="auto" fill="#fff" image-rendering="auto" opacity=".8" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
   </g>
  </g>
- <path id="lineedit-focused" class="ColorScheme-Highlight" d="m329 23v18h24v-18z" color="#0078D4" fill="#ffffff" stroke-width=".43301"/>
+ <path id="lineedit-focused" class="ColorScheme-Highlight" d="m329 23v18h24v-18z" fill="#ffffff" stroke-width=".43301"/>
  <g id="lineedit-focused-topleft" transform="matrix(.5 0 0 .5 232.93 -392.93)">
-  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" color="#0078D4" fill="#ffffff" stroke-width=".5"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
+  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" fill="#ffffff" stroke-width=".5"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
   <path transform="matrix(2,0,0,2,-471.86,781.86)" d="m331 21c-1.662 0-3 1.338-3 3h2c0-0.554 0.446-1 1-1z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-top" transform="matrix(.18321 0 0 .5 294.17 -392.93)">
-  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" color="#0078D4" fill="#ffffff" stroke-width=".70708"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" color="#0078D4" fill="#000000" opacity=".35"/>
+  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" fill="#ffffff" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-topright" transform="matrix(-.5 0 0 .5 449.07 -392.93)">
-  <path d="m190.14 823.86c-3.324 0-6 2.676-6 6h6z" color="#0078D4" fill="#ffffff" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
+  <path d="m190.14 823.86c-3.324 0-6 2.676-6 6h6z" fill="#ffffff" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
   <path transform="matrix(-2,0,0,2,902.14,783.86)" d="m356 20v2c0.554 0 1 0.446 1 1h2c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-left" transform="matrix(0 -.1374 .5 0 -86.93 67.127)">
-  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" color="#0078D4" fill="#ffffff" stroke-width=".70708"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" color="#0078D4" fill="#000000" opacity=".35"/>
+  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" fill="#ffffff" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-right" transform="matrix(0 .1374 -.5 0 768.93 -3.1271)">
-  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" color="#0078D4" fill="#ffffff" stroke-width=".70708"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" color="#0078D4" fill="#000000" opacity=".35"/>
+  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" fill="#ffffff" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-bottom" transform="matrix(.18321 0 0 -.5 294.17 456.93)">
-  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" color="#0078D4" fill="#ffffff" stroke-width=".70708"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" color="#0078D4" fill="#000000" opacity=".35"/>
+  <path class="ColorScheme-Highlight" d="m190.14 827.86v2h131v-2z" fill="#ffffff" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v4h131v-4z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-bottomleft" transform="matrix(.5 0 0 -.5 232.93 456.93)">
-  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" color="#0078D4" fill="#ffffff" stroke-width=".5"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
+  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" fill="#ffffff" stroke-width=".5"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
   <path transform="matrix(2,0,0,-2,-469.86,915.86)" d="m327 43c0 1.662 1.338 3 3 3v-2c-0.554 0-1-0.446-1-1z" fill="#000000" opacity=".35"/>
  </g>
  <g id="lineedit-focused-bottomright" transform="matrix(-.5 0 0 -.5 449.07 456.93)">
-  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" color="#0078D4" fill="#ffffff" stroke-width=".5"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
+  <path d="m190.14 827.86c-1.108 0-2 0.892-2 2h2z" fill="#ffffff" stroke-width=".5"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
   <path transform="matrix(-2,0,0,-2,902.14,915.86)" d="m357 43c0 0.554-0.446 1-1 1v2c1.662 0 3-1.338 3-3z" fill="#000000" opacity=".35"/>
  </g>
- <path id="lineedit-normal" class="ColorScheme-Highlight" d="m291 23v18h24v-18z" color="#0078D4" fill="#ffffff" stroke-width=".43301"/>
+ <path id="lineedit-normal" class="ColorScheme-Highlight" d="m291 23v18h24v-18z" fill="#ffffff" stroke-width=".43301"/>
  <g id="lineedit-normal-topleft" transform="matrix(.5 0 0 .5 194.93 -392.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2v-1z" fill="#000000" opacity=".15"/>
  </g>
  <g id="lineedit-normal-top" transform="matrix(.1832 0 0 .49999 256.17 -392.92)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" color="#0078D4" fill="#ffffff" stroke-width="1.0004"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" color="#0078D4" opacity=".15" stroke-width=".70647"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" fill="#ffffff" stroke-width="1.0004"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" opacity=".15" stroke-width=".70647"/>
  </g>
  <g id="lineedit-normal-topright" transform="matrix(-.5 0 0 .5 411.07 -392.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".15"/>
  </g>
  <g id="lineedit-normal-left" transform="matrix(0 -.1374 .49999 0 -124.92 67.126)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="lineedit-normal-right" transform="matrix(0 .1374 -.49999 0 730.92 -3.1261)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
  <g id="lineedit-normal-bottom" transform="matrix(.18321 0 0 -.5 256.17 456.93)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" color="#0078D4" fill="#ffffff" stroke-width=".99996"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4h131v-4z" fill="#ffffff" stroke-width=".99996"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
  <g id="lineedit-normal-bottomleft" transform="matrix(.5 0 0 -.5 194.93 456.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(2,0,0,-2,-389.86,913.86)" d="m287 42c0 1.662 1.338 3 3 3v-1c-1.108 0-2-0.892-2-2h-1z" opacity=".15"/>
  </g>
  <g id="lineedit-normal-bottomright" transform="matrix(-.5 0 0 -.5 411.07 456.93)">
-  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+  <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+  <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+  <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
   <path transform="matrix(-2,0,0,-2,822.14,913.86)" d="m318 42c0 1.108-0.892 2-2 2v1c1.662 0 3-1.338 3-3h-1z" fill="#000000" opacity=".15"/>
  </g>
  <g id="button-normal-topleft" transform="translate(9,116)">
@@ -1464,161 +1464,161 @@
  <g id="progress-pattern-disabled-normal-right" transform="matrix(.75 0 0 1 87.5 12)">
   <rect x="34" y="162" width="8" height="8" fill="#000000" opacity=".35"/>
  </g>
- <path id="tab-toggled" class="ColorScheme-Highlight" d="m86.996 648v18h24v-18z" color="#0078D4" fill="#ffffff" stroke-width=".43301"/>
+ <path id="tab-toggled" class="ColorScheme-Highlight" d="m86.996 648v18h24v-18z" fill="#ffffff" stroke-width=".43301"/>
  <g id="tab-toggled-topleft" transform="translate(0 -31)">
   <rect x="83" y="673" width="3" height="5" fill="none" stroke-width="2"/>
   <g transform="matrix(.5 0 0 .5 -9.0737 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2z" fill="#000000" opacity=".15"/>
   </g>
  </g>
  <g id="tab-toggled-top" transform="translate(0,2)">
   <rect x="87" y="640" width="24" height="5" fill="none" stroke-width="5.6568"/>
-  <path class="ColorScheme-Highlight" d="m87 643v2h24v-2z" color="#0078d4" fill="#ffffff" stroke-width=".30264"/>
-  <path class="ColorScheme-Highlight" d="m87 642v0.99998h23.999v-0.99998z" color="#0078d4" fill="none" stroke-width=".21401"/>
-  <path class="ColorScheme-Highlight" d="m87 642v1h24v-1z" color="#0078d4" fill="#000000" opacity=".15" stroke-width=".21401"/>
+  <path class="ColorScheme-Highlight" d="m87 643v2h24v-2z" fill="#ffffff" stroke-width=".30264"/>
+  <path class="ColorScheme-Highlight" d="m87 642v0.99998h23.999v-0.99998z" fill="none" stroke-width=".21401"/>
+  <path class="ColorScheme-Highlight" d="m87 642v1h24v-1z" fill="#000000" opacity=".15" stroke-width=".21401"/>
  </g>
  <g id="tab-toggled-topright" transform="translate(0 -31)">
   <rect x="112" y="673" width="3" height="5" fill="none" stroke-width="2"/>
   <g transform="matrix(-.5 0 0 .5 207.07 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".15"/>
   </g>
  </g>
  <g id="tab-toggled-left" transform="matrix(0 -.1374 .49999 0 -328.93 692.12)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="tab-toggled-right" transform="matrix(0 .1374 -.49999 0 526.92 621.87)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
- <path id="tab-toggled-bottom" class="ColorScheme-Highlight" d="m87 667v3h24v-3z" color="#0078D4" fill="#ffffff" stroke-width=".17678"/>
+ <path id="tab-toggled-bottom" class="ColorScheme-Highlight" d="m87 667v3h24v-3z" fill="#ffffff" stroke-width=".17678"/>
  <g id="tab-toggled-bottomleft" transform="matrix(0 -.022901 .49999 0 -328.92 674.35)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="tab-toggled-bottomright" transform="matrix(0 .022901 -.49999 0 526.92 662.65)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
- <path id="tab-focused" class="ColorScheme-Highlight" d="m135 648v18h24v-18z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".43301"/>
+ <path id="tab-focused" class="ColorScheme-Highlight" d="m135 648v18h24v-18z" fill="#000000" opacity=".1" stroke-width=".43301"/>
  <g id="tab-focused-topleft" transform="translate(48 -31)">
   <rect x="83" y="673" width="3" height="5" fill="none" stroke-width="2"/>
   <g transform="matrix(.5 0 0 .5 -9.0737 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#000000" opacity=".1"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#000000" opacity=".1"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2z" opacity="0"/>
   </g>
  </g>
  <g id="tab-focused-top" transform="matrix(1 0 0 .99965 48 -30.763)">
   <rect x="87" y="673" width="24" height="5" fill="none" stroke-width="5.6568"/>
   <g transform="matrix(.1832 0 0 .49999 52.166 263.08)">
-   <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0015h131v-4.0015z" color="#0078d4" fill="#000000" opacity=".1" stroke-width="1.0002"/>
-   <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078d4" fill="none" stroke-width=".70711"/>
-   <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078d4" fill="none" stroke-width=".70711"/>
-   <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" color="#0078d4" opacity="0" stroke-width=".70647"/>
+   <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0015h131v-4.0015z" fill="#000000" opacity=".1" stroke-width="1.0002"/>
+   <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+   <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+   <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" opacity="0" stroke-width=".70647"/>
   </g>
  </g>
  <g id="tab-focused-topright" transform="translate(48 -31)">
   <rect x="112" y="673" width="3" height="5" fill="none" stroke-width="2"/>
   <g transform="matrix(-.5 0 0 .5 207.07 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#000000" opacity=".1"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#000000" opacity=".1"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" opacity="0"/>
   </g>
  </g>
  <g id="tab-focused-left" transform="matrix(0 -.1374 .49999 0 -280.93 692.12)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" opacity="0" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#000000" opacity=".1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" opacity="0" stroke-width=".70707"/>
  </g>
  <g id="tab-focused-right" transform="matrix(0 .1374 -.49999 0 574.92 621.87)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" opacity="0" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#000000" opacity=".1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" opacity="0" stroke-width=".70708"/>
  </g>
- <path id="tab-focused-bottom" class="ColorScheme-Highlight" d="m135 667v3h24v-3z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".17678"/>
+ <path id="tab-focused-bottom" class="ColorScheme-Highlight" d="m135 667v3h24v-3z" fill="#000000" opacity=".1" stroke-width=".17678"/>
  <g id="tab-focused-bottomleft" transform="matrix(0 -.022901 .49999 0 -280.92 674.35)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" opacity="0" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#000000" opacity=".1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" opacity="0" stroke-width=".70707"/>
  </g>
  <g id="tab-focused-bottomright" transform="matrix(0 .022901 -.49999 0 574.92 662.65)">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#000000" opacity=".1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" opacity="0" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#000000" opacity=".1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" opacity="0" stroke-width=".70708"/>
  </g>
- <path id="tab-normal" class="ColorScheme-Highlight" d="m40 648v18h24v-18z" color="#0078D4" fill="#ffffff" opacity="1e-4" stroke-width=".43301"/>
+ <path id="tab-normal" class="ColorScheme-Highlight" d="m40 648v18h24v-18z" fill="#ffffff" opacity="1e-4" stroke-width=".43301"/>
  <g id="tab-normal-topleft" transform="translate(-46.996 -30.998)" opacity="1e-4">
   <rect x="83" y="673" width="3" height="5" fill="none" opacity="1" stroke-width="2"/>
   <g transform="matrix(.5 0 0 .5 -9.0737 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff" opacity="1"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff" opacity="1"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(2,0,0,2,-389.86,785.86)" d="m290 19c-1.662 0-3 1.338-3 3h1c0-1.108 0.892-2 2-2z" fill="#000000" opacity=".15"/>
   </g>
  </g>
  <g id="tab-normal-top" transform="translate(-46.996 -30.998)" opacity="1e-4">
   <rect x="87" y="673" width="24" height="5" fill="none" opacity="1" stroke-width="5.6568"/>
   <g transform="matrix(.1832 0 0 .49999 52.166 263.08)">
-   <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" color="#0078D4" fill="#ffffff" opacity="1" stroke-width="1.0004"/>
-   <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-   <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-   <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70647"/>
+   <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0036h131v-4.0036z" fill="#ffffff" opacity="1" stroke-width="1.0004"/>
+   <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+   <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+   <path class="ColorScheme-Highlight" d="m190.14 823.86v1.9965h131v-1.9965z" fill="#000000" opacity=".15" stroke-width=".70647"/>
   </g>
  </g>
  <g id="tab-normal-topright" transform="translate(-46.996 -30.998)" opacity="1e-4">
   <rect x="112" y="673" width="3" height="5" fill="none" opacity="1" stroke-width="2"/>
   <g transform="matrix(-.5 0 0 .5 207.07 263.07)">
-   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" color="#0078D4" fill="#ffffff" opacity="1"/>
-   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" color="#0078D4" fill="none" stroke-width="1.5"/>
-   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" color="#0078D4" fill="none" stroke-width="1.25"/>
+   <path d="m190.14 825.86c-2.216 0-4 1.784-4 4h4z" fill="#ffffff" opacity="1"/>
+   <path transform="translate(81.14,758.86)" d="m109 65c-3.324 0-6 2.676-6 6h2c0-2.216 1.784-4 4-4z" fill="none" stroke-width="1.5"/>
+   <path transform="translate(81.14,758.86)" d="m109 66c-2.77 0-5 2.23-5 5h2c0-1.662 1.338-3 3-3z" fill="none" stroke-width="1.25"/>
    <path transform="matrix(-2,0,0,2,822.14,785.86)" d="m316 19v1c1.108 0 2 0.892 2 2h1c0-1.662-1.338-3-3-3z" fill="#000000" opacity=".15"/>
   </g>
  </g>
  <g id="tab-normal-left" transform="matrix(0 -.1374 .49999 0 -375.92 692.13)" opacity="1e-4">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" opacity="1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" opacity="1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="tab-normal-right" transform="matrix(0 .1374 -.49999 0 479.92 621.87)" opacity="1e-4">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" opacity="1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" opacity="1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
- <path id="tab-normal-bottom" class="ColorScheme-Highlight" d="m40.004 667v3h24v-3z" color="#0078D4" fill="#ffffff" opacity="1e-4" stroke-width=".17678"/>
+ <path id="tab-normal-bottom" class="ColorScheme-Highlight" d="m40.004 667v3h24v-3z" fill="#ffffff" opacity="1e-4" stroke-width=".17678"/>
  <g id="tab-normal-bottomleft" transform="matrix(0 -.022901 .49999 0 -375.92 674.36)" opacity="1e-4">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" opacity="1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70707"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" opacity="1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70707"/>
  </g>
  <g id="tab-normal-bottomright" transform="matrix(0 .022901 -.49999 0 479.93 662.65)" opacity="1e-4">
-  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" color="#0078D4" fill="#ffffff" opacity="1" stroke-width=".99997"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" color="#0078D4" fill="none" stroke-width=".70711"/>
-  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" color="#0078D4" fill="#000000" opacity=".15" stroke-width=".70708"/>
+  <path class="ColorScheme-Highlight" d="m190.14 825.86v4.0001h131v-4.0001z" fill="#ffffff" opacity="1" stroke-width=".99997"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 824.86v2h131v-2z" fill="none" stroke-width=".70711"/>
+  <path class="ColorScheme-Highlight" d="m190.14 823.86v2h131v-2z" fill="#000000" opacity=".15" stroke-width=".70708"/>
  </g>
  <g id="checkbox-checked-normal" transform="translate(413,-79)">
   <rect x="-243" y="234" width="20" height="20" fill="none" stroke-width="1.9048"/>

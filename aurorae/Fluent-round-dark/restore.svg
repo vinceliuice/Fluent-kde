@@ -1,0 +1,33 @@
+<svg width="22" height="22" enable-background="new" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g id="active-center">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path d="m6 8v8h8v-8h-8zm1 1h6v6h-6v-6z" fill="#dedede" fill-rule="evenodd"/>
+  <path d="m8 6v2h1v-1h6v6h-1v1h2v-8h-8z" fill="#dedede" fill-rule="evenodd"/>
+ </g>
+ <g id="hover-center">
+  <rect x="23" width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".15"/>
+  <g transform="translate(2,-28)" fill="#dedede" fill-rule="evenodd">
+   <path transform="translate(-2,28)" d="m29 8v8h8v-8h-8zm1 1h6v6h-6v-6z"/>
+   <path d="m29 34v2h1v-1h6v6h-1v1h2v-8z"/>
+  </g>
+ </g>
+ <g id="pressed-center" transform="translate(24)">
+  <rect x="23" width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".25"/>
+  <g transform="translate(2,-28)" fill="#dedede" fill-rule="evenodd">
+   <path transform="translate(-26,28)" d="m53 8v8h8v-8h-8zm1 1h6v6h-6v-6z"/>
+   <path d="m29 34v2h1v-1h6v6h-1v1h2v-8z"/>
+  </g>
+ </g>
+ <g id="inactive-center" transform="translate(77)">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path transform="translate(-77)" d="m83 8v8h8v-8h-8zm1 1h6v6h-6v-6z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+  <path d="m8 6v2h1v-1h6v6h-1v1h2v-8z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+ </g>
+ <g id="deactivated-center" transform="translate(100)">
+  <rect width="22" height="22" fill="#ffffff" opacity=".001"/>
+  <path transform="translate(-100)" d="m106 8v8h8v-8h-8zm1 1h6v6h-6v-6z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+  <path d="m8 6v2h1v-1h6v6h-1v1h2v-8z" fill="#dedede" fill-rule="evenodd" opacity=".35"/>
+ </g>
+</svg>

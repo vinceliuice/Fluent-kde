@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment=Fluent-purple dark theme for kde plasma
+Encoding=UTF-8
+Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
+Name=Fluent-purple-dark
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Vince Liuice
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Email=vinceliuice@hotmail.com
+X-KDE-PluginInfo-License=GPL3.0
+X-KDE-PluginInfo-Name=com.github.vinceliuice.Fluent-purple-dark
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/vinceliuice/Fluent-kde
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KDE-fallbackPackage=org.kde.breeze.desktop
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1499840,kns://plasma-themes.knsrc/api.kde-look.org/1499867,kns://aurorae.knsrc/api.kde-look.org/1499847,kns://icons.knsrc/api.kde-look.org/1477945,kns://wallpaper.knsrc/api.kde-look.org/1499857,kns://sddmtheme.knsrc/api.kde-look.org/1499844,kns://xcursor.knsrc/api.kde-look.org/1499852
+X-Plasma-MainScript=defaults

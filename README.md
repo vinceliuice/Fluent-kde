@@ -11,8 +11,22 @@ In this repository you'll find:
 
 ## Installation
 
+### Manual Installation
+
+Run the following commands in the terminal:
+
 ```sh
 ./install.sh
+```
+
+> Tip: `./install.sh` allows the following options:
+
+```
+-n, --name NAME         Specify theme name (Default: Fluent)
+-t, --theme VARIANT...  Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|all] (Default: blue)
+-c, --color VARIANT...  Specify color variant(s) [standard|light|dark] (Default: All variants)
+--round VARIANT         Specify round variant
+-h, --help              Show help
 ```
 
 After installation you can add new `Fluent panel` on desktop

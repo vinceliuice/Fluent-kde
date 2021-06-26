@@ -5,7 +5,7 @@ cursorTheme=Fluent-cursors
 ColorScheme=FluentDark
 
 [kdeglobals][Icons]
-Theme=Fluent
+Theme=Fluent-dark
 
 [kdeglobals][KDE]
 widgetStyle=Breeze
