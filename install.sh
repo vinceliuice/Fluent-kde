@@ -138,11 +138,13 @@ install() {
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}/widgets
     sed -i "s|Name=Fluent${round}|Name=${name}${round}${theme}${color}|"               ${PLASMA_DIR}/${name}${round}${theme}${color}/metadata.desktop
     cp -r ${SRC_DIR}/color-schemes/Fluent${ctheme}${ccolor}.colors                     ${PLASMA_DIR}/${name}${round}${theme}${color}/colors
+  else
+    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}                                ${PLASMA_DIR}/${name}${round}
+    cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}       ${LOOKFEEL_DIR}
   fi
 }
 
 install_common() {
-  cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}                                  ${PLASMA_DIR}/${name}${round}
   cp -ur ${SRC_DIR}/plasma/plasmoids/*                                                 ${PLASMOIDS_DIR}
   cp -ur ${SRC_DIR}/plasma/layout-templates/*                                          ${LAYOUT_DIR}
 }
