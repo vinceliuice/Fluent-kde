@@ -82,8 +82,8 @@ light.color=#ffffff
 mid.light.color=#f0f0f0
 dark.color=#c8c8c8
 mid.color=#e1e1e196
-highlight.color=#E53935
-inactive.highlight.color=#E5393574
+highlight.color=#AB47BC
+inactive.highlight.color=#AB47BC74
 text.color=#444444
 window.text.color=#444444
 button.text.color=#444444
@@ -175,13 +175,13 @@ frame.bottom=3
 frame.left=3
 frame.right=3
 indicator.element=tarrow
-text.normal.color=#333333
-text.focus.color=#333333
-text.press.color=#333333
-text.toggle.color=#242424
-text.disabled.color=#33333374
-text.normal.inactive.color=#33333374
-text.toggle.inactive.color=#24242474
+text.normal.color=#dedede
+text.focus.color=#dedede
+text.press.color=#ffffff
+text.toggle.color=#ffffff
+text.disabled.color=#dedede74
+text.normal.inactive.color=#dedede74
+text.toggle.inactive.color=#ffffff74
 text.margin.top=0
 text.margin.bottom=0
 text.margin.left=6
@@ -275,8 +275,8 @@ text.margin.left=2
 text.margin.right=2
 
 [ToolbarLineEdit]
-frame.element=lineedit
-interior.element=lineedit
+frame.element=tlineedit
+interior.element=tlineedit
 
 [DropDownButton]
 inherits=PanelButtonCommand
@@ -351,10 +351,10 @@ indicator.size=0
 text.margin=3
 interior.element=menubar
 frame.element=menubar
-text.normal.color=#444444
-text.focus.color=#444444
-text.press.color=#444444
-text.toggle.color=#444444
+text.normal.color=#dedede
+text.focus.color=#dedede
+text.press.color=#ffffff
+text.toggle.color=#ffffff
 frame.left=0
 frame.right=0
 frame.top=0
@@ -423,6 +423,14 @@ min_width=+0.3font
 min_height=+0.3font
 frame.expansion=0
 
+[ToolbarItemView]
+frame.element=menubaritem
+interior.element=menubaritem
+text.normal.color=#dedede
+text.focus.color=#dedede
+text.press.color=#dedede
+text.toggle.color=#dedede
+
 [Splitter]
 indicator.size=48
 
@@ -483,10 +491,10 @@ inherits=PanelButtonCommand
 frame.element=menubar
 interior.element=menubar
 frame.bottom=0
-text.normal.color=#444444
-text.focus.color=#444444
-text.press.color=#444444
-text.toggle.color=#444444
+text.normal.color=#dedede
+text.focus.color=#dedede
+text.press.color=#ffffff
+text.toggle.color=#ffffff
 frame.expansion=0
 text.bold=false
 
@@ -503,10 +511,10 @@ text.margin.left=4
 text.margin.right=4
 text.margin.top=0
 text.margin.bottom=0
-text.normal.color=#444444
-text.focus.color=#444444
-text.press.color=#444444
-text.toggle.color=#444444
+text.normal.color=#dedede
+text.focus.color=#dedede
+text.press.color=#ffffff
+text.toggle.color=#ffffff
 text.bold=false
 min_width=+0.3font
 min_height=+0.3font
@@ -522,8 +530,8 @@ text.margin.right=2
 interior.element=titlebar
 indicator.size=16
 indicator.element=mdi
-text.normal.color=#444444
-text.focus.color=#444444
+text.normal.color=#dedede
+text.focus.color=#dedede
 text.bold=false
 text.italic=true
 frame.expansion=0
@@ -545,13 +553,22 @@ text.focus.color=#424242
 text.press.color=#424242
 text.toggle.color=#424242
 
+[ToolbarComboBox]
+frame.element=tcombo
+interior.element=tcombo
+indicator.element=flat-arrow-down
+text.normal.color=#dfdfdf
+text.focus.color=white
+text.press.color=white
+text.toggle.color=white
+
 [GroupBox]
 inherits=GenericFrame
 frame=false
 text.shadow=0
 text.margin=0
 text.normal.color=#444444
-text.focus.color=#E53935
+text.focus.color=#AB47BC
 text.bold=false
 frame.expansion=0
 

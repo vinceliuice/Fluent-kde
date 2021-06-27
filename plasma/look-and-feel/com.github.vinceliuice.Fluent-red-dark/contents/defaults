@@ -8,7 +8,7 @@ ColorScheme=FluentRedDark
 Theme=Fluent-red-dark
 
 [kdeglobals][KDE]
-widgetStyle=kvantum
+widgetStyle=kvantum-dark
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop

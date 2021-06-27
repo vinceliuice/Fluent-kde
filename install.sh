@@ -120,14 +120,14 @@ install() {
   [[ -d ${PLASMA_DIR}/${name}${round}${theme}${color} ]]                               && rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}
   [[ -f ${SCHEMES_DIR}/${name}${ctheme}${ccolor}.colors ]]                             && rm -rf ${name}${ctheme}${ccolor}.colors
   [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color} ]]      && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}
-  [[ -d ${KVANTUM_DIR}/${name}${theme}${color} ]]                                      && rm -rf ${KVANTUM_DIR}/${name}${theme}${color}
+  [[ -d ${KVANTUM_DIR}/${name}${theme} ]]                                              && rm -rf ${KVANTUM_DIR}/${name}${theme}
   [[ -d ${WALLPAPER_DIR}/${name}${theme} ]]                                            && rm -rf ${WALLPAPER_DIR}/${name}${theme}
 
   cp -r ${SRC_DIR}/aurorae/${name}${round}${color}                                     ${AURORAE_DIR}
   cp -r ${SRC_DIR}/wallpaper/${name}${theme}                                           ${WALLPAPER_DIR}
 
-  mkdir -p                                                                             ${KVANTUM_DIR}/${name}${theme}${color}
-  cp -r ${SRC_DIR}/Kvantum/Fluent${theme}${color}/*                                    ${KVANTUM_DIR}/${name}${theme}${color}
+  mkdir -p                                                                             ${KVANTUM_DIR}/${name}${theme}
+  cp -r ${SRC_DIR}/Kvantum/Fluent${theme}/*                                            ${KVANTUM_DIR}/${name}${theme}
 
   if [[ "$color" != '' ]]; then
     cp -r ${SRC_DIR}/color-schemes/${name}${ctheme}${ccolor}.colors                    ${SCHEMES_DIR}
