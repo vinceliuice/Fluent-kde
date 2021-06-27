@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRC_DIR=$(cd $(dirname $0) && pwd)
+SRC_DIR="$(cd $(dirname $0) && pwd)"
 
 THEME_NAME=Fluent
 THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
@@ -149,15 +149,14 @@ install_common() {
   cp -ur ${SRC_DIR}/plasma/layout-templates/*                                          ${LAYOUT_DIR}
 }
 
-while [[ $# -gt 0 ]]; do
-  round=("${ROUND_VARIANTS[0]}")
-  case "${1}" in
+while [[ "$#" -gt 0 ]]; do
+  case "${1:-}" in
     -n|--name)
       name="${1}"
       shift
       ;;
     --round)
-      round=("${ROUND_VARIANTS[1]}")
+      roundconer='true'
       shift
       ;;
     -t|--theme)
@@ -261,6 +260,12 @@ fi
 
 if [[ "${#cthemes[@]}" -eq 0 ]] ; then
   cthemes=("${CTHEME_VARIANTS[0]}")
+fi
+
+if [[ "${roundconer:-}" == 'true' ]] ; then
+  round=("${ROUND_VARIANTS[1]}")
+  else
+  round=("${ROUND_VARIANTS[0]}")
 fi
 
 prompt -i "Installing '${THEME_NAME}${round} kde themes'..."
