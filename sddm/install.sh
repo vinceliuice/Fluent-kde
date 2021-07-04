@@ -119,13 +119,15 @@ install() {
   local theme="$1"
 
 # Checking for root access and proceed if it is present
-if [ "$UID" -eq "$ROOT_UID" ]; then
+if [[ "$UID" -eq "$ROOT_UID" ]]; then
   prompt -i "\n * Install Fluent${theme} in ${THEME_DIR}... "
   [[ -d "${THEME_DIR}/Fluent${theme}" ]] && rm -rf "${THEME_DIR}/Fluent${theme}"
   cp -rf "${REO_DIR}/Fluent" "${THEME_DIR}/Fluent${theme}"
   cp -rf "${REO_DIR}/backgrounds/background${theme}.png" "${THEME_DIR}/Fluent${theme}/background.png"
-  sed -i "s/#0078D4/${theme_color}/g" "${THEME_DIR}/Fluent${theme}/Login.qml"
-  sed -i "s/#0078D4/${theme_color}/g" "${THEME_DIR}/Fluent${theme}/theme.conf"
+  if [[ "${theme}" != '' ]]; then
+    sed -i "s/#0078D4/${theme_color}/g" "${THEME_DIR}/Fluent${theme}/Login.qml"
+    sed -i "s/#0078D4/${theme_color}/g" "${THEME_DIR}/Fluent${theme}/theme.conf"
+  fi
   sed -i "s/Fluent/Fluent${theme}/g" "${THEME_DIR}/Fluent${theme}/metadata.desktop"
   # Success message
   prompt -s "\n * All done!"
