@@ -14,13 +14,15 @@ X-Plasma-API=5.0
 
 [Wallpaper]
 defaultWallpaperTheme=Fluent
-defaultFileSuffix=.jpg
+defaultFileSuffix=.png
 defaultWidth=3840
 defaultHeight=2160
 
 [ContrastEffect]
 enabled=true
 contrast=0.2
-#intensity is disabled, in order to auto adjust to the chosen theme color
-#intensity=2.0
-saturation=1.7
+intensity=1.4
+saturation=10
+
+[AdaptiveTransparency]
+enabled=true
