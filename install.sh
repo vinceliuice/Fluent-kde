@@ -126,6 +126,10 @@ install() {
   cp -r ${SRC_DIR}/aurorae/${name}${round}${color}                                     ${AURORAE_DIR}
   cp -r ${SRC_DIR}/wallpaper/${name}${theme}                                           ${WALLPAPER_DIR}
 
+  if [[ "$round" == '-round' ]]; then
+    cp -r ${SRC_DIR}/wallpaper/${name}${round}${color}                                 ${WALLPAPER_DIR}
+  fi
+
   mkdir -p                                                                             ${KVANTUM_DIR}/${name}${theme}
   cp -r ${SRC_DIR}/Kvantum/Fluent${theme}/*                                            ${KVANTUM_DIR}/${name}${theme}
 
@@ -135,6 +139,7 @@ install() {
 
     mkdir -p                                                                           ${PLASMA_DIR}/${name}${round}${theme}${color}
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${theme}${color}
+    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/dialogs/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}/dialogs
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}/widgets
     sed -i "s|Name=Fluent${round}|Name=${name}${round}${theme}${color}|"               ${PLASMA_DIR}/${name}${round}${theme}${color}/metadata.desktop
     if [[ "$theme" != '' ]]; then
@@ -148,8 +153,9 @@ install() {
 }
 
 install_common() {
-  cp -ur ${SRC_DIR}/plasma/plasmoids/*                                                 ${PLASMOIDS_DIR}
-  cp -ur ${SRC_DIR}/plasma/layout-templates/*                                          ${LAYOUT_DIR}
+  cp -r ${SRC_DIR}/plasma/plasmoids/*                                                  ${PLASMOIDS_DIR}
+  cp -r ${SRC_DIR}/plasma/layout-templates/*                                           ${LAYOUT_DIR}
+  cp -r ${SRC_DIR}/Kvantum/Fluent-round                                                ${KVANTUM_DIR}
 }
 
 while [[ "$#" -gt 0 ]]; do
