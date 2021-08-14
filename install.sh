@@ -150,6 +150,10 @@ install() {
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}                                ${PLASMA_DIR}/${name}${round}
     cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}       ${LOOKFEEL_DIR}
   fi
+
+  if [[ "$round" == '-round' ]]; then
+    sed -i "s|defaultWallpaperTheme=Fluent|defaultWallpaperTheme=Fluent${round}${color}|" ${PLASMA_DIR}/${name}${round}${theme}${color}/metadata.desktop
+  fi
 }
 
 install_common() {
