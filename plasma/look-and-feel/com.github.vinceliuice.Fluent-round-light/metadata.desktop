@@ -14,5 +14,5 @@ X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Website=https://github.com/vinceliuice/Fluent-kde
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 X-KDE-fallbackPackage=org.kde.breeze.desktop
-X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1499840,kns://plasma-themes.knsrc/api.kde-look.org/1544468,kns://aurorae.knsrc/api.kde-look.org/1544469,kns://icons.knsrc/api.kde-look.org/1477945,kns://wallpaper.knsrc/api.kde-look.org/1499857,kns://sddmtheme.knsrc/api.kde-look.org/1499844,kns://xcursor.knsrc/api.kde-look.org/1499852
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1499840,kns://plasma-themes.knsrc/api.kde-look.org/1544468,kns://aurorae.knsrc/api.kde-look.org/1544469,kns://icons.knsrc/api.kde-look.org/1477945,kns://wallpaper.knsrc/api.kde-look.org/1574124,kns://sddmtheme.knsrc/api.kde-look.org/1499844,kns://xcursor.knsrc/api.kde-look.org/1499852
 X-Plasma-MainScript=defaults

@@ -3,7 +3,7 @@
 ROOT_UID=0
 THEME_DIR="/usr/share/sddm/themes"
 REO_DIR="$(cd $(dirname $0) && pwd)"
-THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
+THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-round')
 
 MAX_DELAY=20                                  # max delay for user to enter root password
 
@@ -80,6 +80,11 @@ while [[ "$#" -gt 0 ]]; do
           grey)
             themes+=("${THEME_VARIANTS[7]}")
             theme_color="#616161"
+            shift
+            ;;
+          round)
+            themes+=("${THEME_VARIANTS[8]}")
+            theme_color="#0078D4"
             shift
             ;;
           -*)

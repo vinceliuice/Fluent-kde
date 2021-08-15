@@ -122,6 +122,7 @@ install() {
   [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color} ]]      && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}
   [[ -d ${KVANTUM_DIR}/${name}${theme} ]]                                              && rm -rf ${KVANTUM_DIR}/${name}${theme}
   [[ -d ${WALLPAPER_DIR}/${name}${theme} ]]                                            && rm -rf ${WALLPAPER_DIR}/${name}${theme}
+  [[ -d ${WALLPAPER_DIR}/${name}${round}${color} ]]                                    && rm -rf ${WALLPAPER_DIR}/${name}${round}${color}
 
   cp -r ${SRC_DIR}/aurorae/${name}${round}${color}                                     ${AURORAE_DIR}
   cp -r ${SRC_DIR}/wallpaper/${name}${theme}                                           ${WALLPAPER_DIR}
