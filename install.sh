@@ -69,6 +69,8 @@ EOF
 [[ ! -d ${PLASMOIDS_DIR} ]] && mkdir -p ${PLASMOIDS_DIR}
 [[ ! -d ${LAYOUT_DIR} ]] && mkdir -p ${LAYOUT_DIR}
 
+cp -rf "${SRC_DIR}"/configs/Xresources "$HOME"/.Xresources
+
 install() {
   local name="$1"
   local theme="$2"
