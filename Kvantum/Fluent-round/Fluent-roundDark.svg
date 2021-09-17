@@ -20,11 +20,11 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      showgrid="true"
-     inkscape:zoom="3.9999998"
-     inkscape:cx="29.625001"
-     inkscape:cy="862.75004"
+     inkscape:zoom="22.627416"
+     inkscape:cx="192.48773"
+     inkscape:cy="492.58829"
      inkscape:window-width="1920"
-     inkscape:window-height="1008"
+     inkscape:window-height="1018"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -735,20 +735,18 @@
   <path
      id="menuitem-normal-top"
      d="m 193,493 h 8 v 4 h -8 z"
-     fill="#ffffff"
-     opacity="0.1" />
+     opacity="0.1"
+     style="fill:#ffffff" />
   <path
      id="menuitem-normal-bottom"
      d="m 193,505 h 8 v 4 h -8 z"
-     fill="#ffffff"
-     fill-rule="evenodd"
      opacity="0.1"
-     stroke-width="0.632458" />
+     style="fill:#ffffff" />
   <path
      id="menuitem-normal"
      d="m193 497h8v8h-8z"
-     fill="#ffffff"
-     opacity=".1" />
+     opacity=".1"
+     style="fill:#ffffff" />
   <path
      id="window-normal"
      d="m380 814.26h30v30h-30z"
@@ -4803,9 +4801,9 @@
      transform="translate(-4,-2)">
     <path
        d="m 197,495 c -2.216,0 -4,1.784 -4,4 h 4 z"
-       fill="#ffffff"
        opacity="0.1"
-       id="path1687" />
+       id="path1687"
+       style="fill:#ffffff" />
   </g>
   <g
      id="menuitem-normal-left"
@@ -4813,9 +4811,9 @@
      fill-rule="evenodd">
     <path
        d="m 191,497 h 4 v 8 h -4 z"
-       fill="#ffffff"
        opacity="0.1"
-       id="path1692" />
+       id="path1692"
+       style="fill:#ffffff" />
   </g>
   <use
      id="menuitem-normal-topright"

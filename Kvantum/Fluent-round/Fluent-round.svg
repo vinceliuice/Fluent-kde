@@ -19,13 +19,13 @@
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     showgrid="true"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="70.999996"
-     inkscape:cy="873.24996"
+     showgrid="false"
+     inkscape:zoom="1.0000001"
+     inkscape:cx="164.99999"
+     inkscape:cy="577.49997"
      inkscape:window-width="1587"
      inkscape:window-height="1005"
-     inkscape:window-x="442"
+     inkscape:window-x="332"
      inkscape:window-y="6"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2270"
@@ -7540,21 +7540,16 @@
   <path
      id="menuitem-normal-top"
      d="m 193,493 h 8 v 4 h -8 z"
-     fill="#ffffff"
      opacity="0.1"
      style="fill:#000000" />
   <path
      id="menuitem-normal-bottom"
      d="m 193,505 h 8 v 4 h -8 z"
-     fill="#ffffff"
-     fill-rule="evenodd"
      opacity="0.1"
-     stroke-width="0.632458"
      style="fill:#000000" />
   <path
      id="menuitem-normal"
      d="m 193,497 h 8 v 8 h -8 z"
-     fill="#ffffff"
      opacity="0.1"
      style="fill:#000000" />
   <g
@@ -7562,7 +7557,6 @@
      transform="translate(-4,-2)">
     <path
        d="m 197,495 c -2.216,0 -4,1.784 -4,4 h 4 z"
-       fill="#ffffff"
        opacity="0.1"
        id="path1687"
        style="fill:#000000" />
@@ -7573,7 +7567,6 @@
      fill-rule="evenodd">
     <path
        d="m 191,497 h 4 v 8 h -4 z"
-       fill="#ffffff"
        opacity="0.1"
        id="path1692"
        style="fill:#000000" />
