@@ -19,15 +19,15 @@
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     showgrid="true"
-     inkscape:zoom="11.313709"
-     inkscape:cx="315.67898"
-     inkscape:cy="303.52559"
-     inkscape:window-width="1920"
-     inkscape:window-height="1006"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     showgrid="false"
+     inkscape:zoom="1.0000001"
+     inkscape:cx="164.99999"
+     inkscape:cy="577.49997"
+     inkscape:window-width="1587"
+     inkscape:window-height="1005"
+     inkscape:window-x="332"
+     inkscape:window-y="6"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2270"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
@@ -142,40 +142,6 @@
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient4465" />
     <linearGradient
-       id="linearGradient4855-3"
-       x1="485.83"
-       x2="485.83"
-       y1="-23"
-       y2="-15"
-       gradientTransform="matrix(1.0755 0 0 1 -40.002 -1)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <linearGradient
-       id="linearGradient5588-5"
-       x1="47.077"
-       x2="47.077"
-       y1="-965.73"
-       y2="-952.4"
-       gradientTransform="matrix(.71429 0 0 .6 -317.71 864.44)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <radialGradient
-       id="radialGradient4839-3"
-       cx="26"
-       cy="477"
-       r="4.5"
-       gradientTransform="matrix(0 -1.7778 1.7778 0 -825 518.22)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <linearGradient
-       id="linearGradient4863-5"
-       x1="42.667"
-       x2="42.667"
-       y1="-472"
-       y2="-464"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <linearGradient
        id="linearGradient4863-5-3"
        x1="42.667"
        x2="42.667"
@@ -186,38 +152,6 @@
        gradientTransform="matrix(1,0,0,0.66666667,0,-156.66667)" />
     <radialGradient
        id="radialGradient4839-3-5"
-       cx="26"
-       cy="477"
-       r="4.5"
-       gradientTransform="matrix(0,-5.3334,5.3334,0,-2521,610.66)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <radialGradient
-       id="radialGradient2344"
-       cx="26"
-       cy="477"
-       r="4.5"
-       gradientTransform="matrix(0,-5.3334,5.3334,0,-2521,610.66)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <radialGradient
-       id="radialGradient2352"
-       cx="26"
-       cy="477"
-       r="4.5"
-       gradientTransform="matrix(0,-5.3334,5.3334,0,-2521,610.66)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <radialGradient
-       id="radialGradient2360"
-       cx="26"
-       cy="477"
-       r="4.5"
-       gradientTransform="matrix(0,-5.3334,5.3334,0,-2521,610.66)"
-       gradientUnits="userSpaceOnUse"
-       xlink:href="#linearGradient4465" />
-    <radialGradient
-       id="radialGradient2368"
        cx="26"
        cy="477"
        r="4.5"
@@ -4241,294 +4175,6 @@
      d="m 81.998,971.99997 h 4 v 4 c -4,0 -4,-4 -4,-4 z"
      opacity="0.07" />
   <g
-     id="scrollbarslider-normal-topleft"
-     transform="translate(-107,-221)">
-    <path
-       d="m155 1089c-6.648 0-12 5.3521-12 12h12z"
-       opacity="0"
-       id="path1556" />
-    <path
-       d="m155 1091h-5v10h5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.005"
-       id="path1558" />
-  </g>
-  <g
-     id="scrollbarslider-normal-left"
-     transform="matrix(1 0 0 1.3939 -107 -654.73)">
-    <path
-       d="m143 1101v16.5h12v-16.5z"
-       opacity="0"
-       id="path1561" />
-    <path
-       d="m150 1101v16.5h5v-16.5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.0541"
-       id="path1563" />
-  </g>
-  <g
-     id="scrollbarslider-focused-topright"
-     transform="matrix(1 0 0 1.3788 -147 -55.52)">
-    <rect
-       x="225"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1566" />
-    <path
-       d="m225 669.8v8.7019h10v-8.7014z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.1238"
-       id="path1568" />
-  </g>
-  <g
-     id="scrollbarslider-focused-topleft"
-     transform="matrix(1 0 0 1.3788 -147 -55.521)">
-    <rect
-       x="213"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1571" />
-    <path
-       d="m225 669.8-10 1e-3v8.7005h10z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.1238"
-       id="path1573" />
-  </g>
-  <g
-     id="scrollbarslider-focused-left"
-     transform="translate(-147 201.51)">
-    <rect
-       x="213"
-       y="678.5"
-       width="12"
-       height="23"
-       opacity="0"
-       id="rect1576" />
-    <path
-       d="m215 678.5v23h10v-23z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.026"
-       id="path1578" />
-  </g>
-  <g
-     id="scrollbarslider-focused-right"
-     transform="translate(-147 201.51)">
-    <rect
-       x="225"
-       y="678.5"
-       width="12"
-       height="22.994"
-       opacity="0"
-       id="rect1581" />
-    <path
-       d="m225 678.5v23h10v-23z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.026"
-       id="path1583" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-topright"
-     transform="matrix(1 0 0 1.3788 -114 -55.518)">
-    <rect
-       x="225"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1586" />
-    <path
-       d="m225 669.8v8.7032h10v-8.7041z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.1239"
-       id="path1588" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-topleft"
-     transform="matrix(1 0 0 1.3788 -114 -55.52)">
-    <rect
-       x="213"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1591" />
-    <path
-       d="m225 669.8h-10v8.7031h10v-4.3515z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.1239"
-       id="path1593" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-left"
-     transform="translate(-114 201.51)">
-    <rect
-       x="213"
-       y="678.5"
-       width="12"
-       height="23"
-       opacity="0"
-       id="rect1596" />
-    <path
-       d="m215 678.5v23h10v-23z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.026"
-       id="path1598" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-right"
-     transform="translate(-114 201.51)">
-    <rect
-       x="225"
-       y="678.5"
-       width="12"
-       height="22.994"
-       opacity="0"
-       id="rect1601" />
-    <path
-       d="m225 678.5v23h10v-23z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.026"
-       id="path1603" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-bottomright"
-     transform="matrix(1 0 0 -1.3774 -114 1837.6)">
-    <rect
-       x="225"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1606" />
-    <path
-       d="m225 669.79v8.7117h10v-8.6603z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.1244"
-       id="path1608" />
-  </g>
-  <g
-     id="scrollbarslider-pressed-bottomleft"
-     transform="matrix(1 0 0 -1.3774 -114 1837.6)">
-    <rect
-       x="213"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1611" />
-    <path
-       d="m225 669.79-10 0.0514v8.6602h10v-4.3558z"
-       fill="#000000"
-       opacity=".45"
-       stroke-width="1.1244"
-       id="path1613" />
-  </g>
-  <g
-     id="scrollbarslider-focused-bottomright"
-     transform="matrix(1 0 0 -1.3774 -147 1837.6)">
-    <rect
-       x="225"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1616" />
-    <path
-       d="m225 669.79v8.7117h10v-8.6617z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.1244"
-       id="path1618" />
-  </g>
-  <g
-     id="scrollbarslider-focused-bottomleft"
-     transform="matrix(1 0 0 -1.3774 -147 1837.6)">
-    <rect
-       x="213"
-       y="669.8"
-       width="12"
-       height="8.703"
-       opacity="0"
-       id="rect1621" />
-    <path
-       d="m225 669.79-10 0.05v8.6616h10z"
-       fill="#000000"
-       opacity=".25"
-       stroke-width="1.1244"
-       id="path1623" />
-  </g>
-  <g
-     id="scrollbarslider-normal-topright"
-     transform="matrix(-1,0,0,1,203,-221)">
-    <path
-       d="m155 1089c-6.648 0-12 5.3521-12 12h12z"
-       opacity="0"
-       id="path1626" />
-    <path
-       d="m155 1091h-5v10h5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.005"
-       id="path1628" />
-  </g>
-  <g
-     id="scrollbarslider-normal-right"
-     transform="matrix(-1 0 0 1.3939 203 -654.73)">
-    <path
-       d="m143 1101v16.5h12v-16.5z"
-       opacity="0"
-       id="path1631" />
-    <path
-       d="m150 1101v16.5h5v-16.5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.0541"
-       id="path1633" />
-  </g>
-  <g
-     id="scrollbarslider-normal-bottomleft"
-     transform="matrix(1 0 0 -1 -107 2004)">
-    <path
-       d="m155 1089c-6.648 0-12 5.3521-12 12h12z"
-       opacity="0"
-       id="path1636" />
-    <path
-       d="m155 1091-5-0.027v10.03h5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.0052"
-       id="path1638" />
-  </g>
-  <g
-     id="scrollbarslider-normal-bottomright"
-     transform="rotate(180 101.5 1002)">
-    <path
-       d="m155 1089c-6.648 0-12 5.3521-12 12h12z"
-       opacity="0"
-       id="path1641" />
-    <path
-       d="m155 1091-5-0.027v10.03h5z"
-       fill="#000000"
-       opacity=".15"
-       stroke-width="1.0052"
-       id="path1643" />
-  </g>
-  <g
      id="flatbutton-normal-topleft"
      transform="matrix(.9447 0 0 .94482 -7.997 -114)"
      stroke-linecap="square">
@@ -6406,81 +6052,6 @@
      width="100%"
      height="100%" />
   <path
-     id="menuitem-normal-top"
-     d="m 193,493 h 8 v 4 h -8 z"
-     opacity="0.1"
-     style="fill:#000000" />
-  <path
-     id="menuitem-normal-bottom"
-     d="m 193,505 h 8 v 4 h -8 z"
-     opacity="0.1"
-     style="fill:#000000" />
-  <path
-     id="menuitem-normal"
-     d="m 193,497 h 8 v 8 h -8 z"
-     opacity="0.1"
-     style="fill:#000000" />
-  <g
-     id="menuitem-normal-topleft"
-     transform="translate(-4,-2)">
-    <path
-       d="m 189,495 v 2 h 2 v -2 z"
-       fill="none"
-       style="paint-order:normal"
-       id="path1685" />
-    <path
-       d="m 197,495 c -2.216,0 -4,1.784 -4,4 h 4 z"
-       opacity="0.1"
-       id="path1687"
-       style="fill:#000000" />
-  </g>
-  <g
-     id="menuitem-normal-left"
-     transform="translate(-2)"
-     fill-rule="evenodd">
-    <path
-       d="m 187,497 h 4 v 8 h -4 z"
-       fill="none"
-       id="path1690" />
-    <path
-       d="m 191,497 h 4 v 8 h -4 z"
-       opacity="0.1"
-       id="path1692"
-       style="fill:#000000" />
-  </g>
-  <use
-     id="menuitem-normal-topright"
-     transform="matrix(-1,0,0,1,394,0)"
-     width="100%"
-     height="100%"
-     xlink:href="#menuitem-normal-topleft"
-     x="0"
-     y="0" />
-  <use
-     id="menuitem-normal-right"
-     transform="matrix(-1,0,0,1,394,0)"
-     width="100%"
-     height="100%"
-     xlink:href="#menuitem-normal-left"
-     x="0"
-     y="0" />
-  <use
-     id="menuitem-normal-bottomright"
-     transform="rotate(180,197,501)"
-     width="100%"
-     height="100%"
-     xlink:href="#menuitem-normal-topleft"
-     x="0"
-     y="0" />
-  <use
-     id="menuitem-normal-bottomleft"
-     transform="matrix(1,0,0,-1,0,1002)"
-     width="100%"
-     height="100%"
-     xlink:href="#menuitem-normal-topleft"
-     x="0"
-     y="0" />
-  <path
      id="menu-normal"
      d="m 111,473 h 48 v 48 h -48 z"
      style="opacity:0.75;fill:#ffffff;fill-opacity:1" />
@@ -7965,5 +7536,323 @@
        y="380"
        rx="2"
        ry="2" />
+  </g>
+  <path
+     id="menuitem-normal-top"
+     d="m 193,493 h 8 v 4 h -8 z"
+     opacity="0.1"
+     style="fill:#000000" />
+  <path
+     id="menuitem-normal-bottom"
+     d="m 193,505 h 8 v 4 h -8 z"
+     opacity="0.1"
+     style="fill:#000000" />
+  <path
+     id="menuitem-normal"
+     d="m 193,497 h 8 v 8 h -8 z"
+     opacity="0.1"
+     style="fill:#000000" />
+  <g
+     id="menuitem-normal-topleft"
+     transform="translate(-4,-2)">
+    <path
+       d="m 197,495 c -2.216,0 -4,1.784 -4,4 h 4 z"
+       opacity="0.1"
+       id="path1687"
+       style="fill:#000000" />
+  </g>
+  <g
+     id="menuitem-normal-left"
+     transform="translate(-2)"
+     fill-rule="evenodd">
+    <path
+       d="m 191,497 h 4 v 8 h -4 z"
+       opacity="0.1"
+       id="path1692"
+       style="fill:#000000" />
+  </g>
+  <use
+     id="menuitem-normal-topright"
+     transform="matrix(-1,0,0,1,394,0)"
+     width="100%"
+     height="100%"
+     xlink:href="#menuitem-normal-topleft"
+     x="0"
+     y="0" />
+  <use
+     id="menuitem-normal-right"
+     transform="matrix(-1,0,0,1,394,0)"
+     width="100%"
+     height="100%"
+     xlink:href="#menuitem-normal-left"
+     x="0"
+     y="0" />
+  <use
+     id="menuitem-normal-bottomright"
+     transform="rotate(180,197,501)"
+     width="100%"
+     height="100%"
+     xlink:href="#menuitem-normal-topleft"
+     x="0"
+     y="0" />
+  <use
+     id="menuitem-normal-bottomleft"
+     transform="matrix(1,0,0,-1,0,1002)"
+     width="100%"
+     height="100%"
+     xlink:href="#menuitem-normal-topleft"
+     x="0"
+     y="0" />
+  <g
+     id="scrollbarslider-normal-topleft"
+     transform="translate(-126,-242.99997)">
+    <path
+       id="scrollbarslider-normal-topleft0-9"
+       d="m 155,1089 c -6.648,0 -12,5.3521 -12,12 h 12 z"
+       style="opacity:0;fill:#969696" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path994-3"
+       d="m 155,1090 c -2.5,0 -4.5,1.638 -4.5,3.638 V 1101 h 4.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-normal-left"
+     transform="matrix(0.99999979,0,0,1.3939056,-125.99997,-676.69007)">
+    <path
+       id="scrollbarslider-normal-left0-1"
+       d="m 143,1101 v 16.4064 0.094 h 12 v -16.5 h -12 z"
+       style="opacity:0;fill:#969696" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path998"
+       d="m 150.5,1101 v 16.4064 0.094 h 4.5 v -16.5 h -4.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-topright"
+     transform="matrix(1,0,0,1.3788159,-166,-77.526334)">
+    <rect
+       style="opacity:0"
+       id="rect1001"
+       width="12"
+       height="8.7030001"
+       x="225"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1003"
+       d="M 225,671.24725 V 678.5 h 9.5 c 0,-4.35156 -3.78571,-7.25278 -9.5,-7.25276 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-topleft"
+     transform="matrix(1,0,0,1.3788175,-166,-77.527374)">
+    <rect
+       style="opacity:0"
+       id="rect1006"
+       width="12"
+       height="8.7030001"
+       x="213"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1008"
+       d="m 225,671.24722 c -5.71429,0 -9.5,2.90118 -9.5,7.25268 h 9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-left"
+     transform="translate(-166,179.50015)">
+    <rect
+       style="opacity:0"
+       id="rect1011"
+       width="12"
+       height="23"
+       x="213"
+       y="678.5" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1013"
+       d="m 215.5,678.5004 v 22.8687 0.131 h 9.5 v -23 h -9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-right"
+     transform="translate(-166,179.50015)">
+    <rect
+       style="opacity:0"
+       id="rect1016"
+       width="12"
+       height="22.993999"
+       x="225"
+       y="678.5" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1018"
+       d="m 225,678.5005 v 23 h 9.5 v -0.131 -22.8686 H 225 Z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-topright"
+     transform="matrix(1,0,0,1.3788159,-133,-77.526334)">
+    <rect
+       style="opacity:0"
+       id="rect1021"
+       width="12"
+       height="8.7030001"
+       x="225"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1023"
+       d="M 225,671.24725 V 678.5 h 9.5 c 0,-4.35156 -3.78571,-7.25278 -9.5,-7.25276 z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-topleft"
+     transform="matrix(1,0,0,1.3788175,-133,-77.527374)">
+    <rect
+       style="opacity:0"
+       id="rect1026"
+       width="12"
+       height="8.7030001"
+       x="213"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1028"
+       d="m 225,671.24722 c -5.71429,0 -9.5,2.90118 -9.5,7.25268 h 9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-left"
+     transform="translate(-133,179.50015)">
+    <rect
+       style="opacity:0"
+       id="rect1031"
+       width="12"
+       height="23"
+       x="213"
+       y="678.5" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1033"
+       d="m 215.5,678.5004 v 22.8687 0.131 h 9.5 v -23 h -9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-right"
+     transform="translate(-133,179.50015)">
+    <rect
+       style="opacity:0"
+       id="rect1036"
+       width="12"
+       height="22.993999"
+       x="225"
+       y="678.5" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1038"
+       d="m 225,678.5005 v 23 h 9.5 v -0.131 -22.8686 H 225 Z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-bottomright"
+     transform="matrix(1,0,0,-1.3788159,-133,1816.5266)">
+    <rect
+       style="opacity:0"
+       id="rect1041"
+       width="12"
+       height="8.7030001"
+       x="225"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1043"
+       d="M 225,671.24725 V 678.5 h 9.5 c 0,-4.35156 -3.78571,-7.25278 -9.5,-7.25276 z" />
+  </g>
+  <g
+     id="scrollbarslider-pressed-bottomleft"
+     transform="matrix(1,0,0,-1.3788175,-133,1816.5278)">
+    <rect
+       style="opacity:0"
+       id="rect1046"
+       width="12"
+       height="8.7030001"
+       x="213"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.45"
+       id="path1048"
+       d="m 225,671.24722 c -5.71429,0 -9.5,2.90118 -9.5,7.25268 h 9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-bottomright"
+     transform="matrix(1,0,0,-1.3788159,-166,1816.5265)">
+    <rect
+       style="opacity:0"
+       id="rect1051"
+       width="12"
+       height="8.7030001"
+       x="225"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1053"
+       d="M 225,671.24725 V 678.5 h 9.5 c 0,-4.35156 -3.78571,-7.25278 -9.5,-7.25276 z" />
+  </g>
+  <g
+     id="scrollbarslider-focused-bottomleft"
+     transform="matrix(1,0,0,-1.3788175,-166,1816.5275)">
+    <rect
+       style="opacity:0"
+       id="rect1056"
+       width="12"
+       height="8.7030001"
+       x="213"
+       y="669.79999" />
+    <path
+       style="fill:#000000;opacity:0.25"
+       id="path1058"
+       d="m 225,671.24722 c -5.71429,0 -9.5,2.90118 -9.5,7.25268 h 9.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-normal-topright"
+     transform="matrix(-1,0,0,1,184,-242.99997)">
+    <path
+       style="opacity:0;fill:#969696"
+       id="path1061"
+       d="m 155,1089 c -6.648,0 -12,5.3521 -12,12 h 12 z" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path1063"
+       d="m 155,1090 c -2.5,0 -4.47284,1.6382 -4.5,3.638 V 1101 h 4.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-normal-right"
+     transform="matrix(-0.99999979,0,0,1.3939056,183.99997,-676.69007)">
+    <path
+       style="opacity:0;fill:#969696"
+       id="path1066"
+       d="m 143,1101 v 16.4064 0.094 h 12 v -16.5 h -12 z" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path1068"
+       d="m 150.5,1101 v 16.4064 0.094 h 4.5 v -16.5 h -4.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-normal-bottomleft"
+     transform="matrix(1,0,0,-1,-126,1982.0001)">
+    <path
+       style="opacity:0;fill:#969696"
+       id="path1071"
+       d="m 155,1089 c -6.648,0 -12,5.3521 -12,12 h 12 z" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path1073"
+       d="m 155,1090 c -2.5,0 -4.5,1.638 -4.5,3.638 V 1101 h 4.5 z" />
+  </g>
+  <g
+     id="scrollbarslider-normal-bottomright"
+     transform="rotate(180,91.999997,990.99992)">
+    <path
+       style="opacity:0;fill:#969696"
+       id="path1076"
+       d="m 155,1089 c -6.648,0 -12,5.3521 -12,12 h 12 z" />
+    <path
+       style="opacity:0.15;fill:#000000"
+       id="path1078"
+       d="m 155,1090 c -2.5,0 -4.5,1.638 -4.5,3.638 V 1101 h 4.5 z" />
   </g>
 </svg>
