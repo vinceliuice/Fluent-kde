@@ -1,0 +1,24 @@
+<svg width="22" height="22" enable-background="new" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g id="active-center">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m10 6c-0.74278 0-1.3874 0.40192-1.7324 1h3.7324c1.662 0 3 1.338 3 3v3.7324c0.59808-0.34498 1-0.98965 1-1.7324v-2c0-2.216-1.784-4-4-4zm-2 2c-1.108 0-2 0.892-2 2v4c0 1.108 0.892 2 2 2h4c1.108 0 2-0.892 2-2v-4c0-1.108-0.892-2-2-2zm0 1h4c0.554 0 1 0.446 1 1v4c0 0.554-0.446 1-1 1h-4c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1z" fill="#dedede" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".08" style="paint-order:stroke markers fill"/>
+ </g>
+ <g id="hover-center">
+  <rect x="23" width="22" height="22" fill="#000000" opacity=".001"/>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".15"/>
+  <path d="m33 6c-0.74278 0-1.3874 0.40192-1.7324 1h3.7324c1.662 0 3 1.338 3 3v3.7324c0.59808-0.34498 1-0.98965 1-1.7324v-2c0-2.216-1.784-4-4-4zm-2 2c-1.108 0-2 0.892-2 2v4c0 1.108 0.892 2 2 2h4c1.108 0 2-0.892 2-2v-4c0-1.108-0.892-2-2-2zm0 1h4c0.554 0 1 0.446 1 1v4c0 0.554-0.446 1-1 1h-4c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1z" fill="#dedede" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".08" style="paint-order:stroke markers fill"/>
+ </g>
+ <g id="pressed-center" transform="translate(27)">
+  <rect x="23" width="22" height="22" fill="#000000" opacity=".001"/>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".25"/>
+  <path d="m33 6c-0.74278 0-1.3874 0.40192-1.7324 1h3.7324c1.662 0 3 1.338 3 3v3.7324c0.59808-0.34498 1-0.98965 1-1.7324v-2c0-2.216-1.784-4-4-4zm-2 2c-1.108 0-2 0.892-2 2v4c0 1.108 0.892 2 2 2h4c1.108 0 2-0.892 2-2v-4c0-1.108-0.892-2-2-2zm0 1h4c0.554 0 1 0.446 1 1v4c0 0.554-0.446 1-1 1h-4c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1z" fill="#dedede" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".08" style="paint-order:stroke markers fill"/>
+ </g>
+ <g id="inactive-center" transform="translate(75)" opacity=".35">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m10 6c-0.74278 0-1.3874 0.40192-1.7324 1h3.7324c1.662 0 3 1.338 3 3v3.7324c0.59808-0.34498 1-0.98965 1-1.7324v-2c0-2.216-1.784-4-4-4zm-2 2c-1.108 0-2 0.892-2 2v4c0 1.108 0.892 2 2 2h4c1.108 0 2-0.892 2-2v-4c0-1.108-0.892-2-2-2zm0 1h4c0.554 0 1 0.446 1 1v4c0 0.554-0.446 1-1 1h-4c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1z" fill="#dedede" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".08" style="paint-order:stroke markers fill"/>
+ </g>
+ <g id="deactivated-center" transform="translate(102)" opacity=".35">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m10 6c-0.74278 0-1.3874 0.40192-1.7324 1h3.7324c1.662 0 3 1.338 3 3v3.7324c0.59808-0.34498 1-0.98965 1-1.7324v-2c0-2.216-1.784-4-4-4zm-2 2c-1.108 0-2 0.892-2 2v4c0 1.108 0.892 2 2 2h4c1.108 0 2-0.892 2-2v-4c0-1.108-0.892-2-2-2zm0 1h4c0.554 0 1 0.446 1 1v4c0 0.554-0.446 1-1 1h-4c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1z" fill="#dedede" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".08" style="paint-order:stroke markers fill"/>
+ </g>
+</svg>
