@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Fluent-round
+Name=Fluent-round-darker
 Comment=Fluent theme for plasma
 
 X-KDE-PluginInfo-Author=Vince Liuice
@@ -13,14 +13,14 @@ X-KDE-PluginInfo-EnabledByDefault=true
 X-Plasma-API=5.0
 
 [Wallpaper]
-defaultWallpaperTheme=Fluent
+defaultWallpaperTheme=Fluent-round-darker
 defaultFileSuffix=.png
 defaultWidth=3840
 defaultHeight=2160
 
 [ContrastEffect]
 enabled=true
-contrast=0.2
+contrast=1
 intensity=1.4
 saturation=1
 

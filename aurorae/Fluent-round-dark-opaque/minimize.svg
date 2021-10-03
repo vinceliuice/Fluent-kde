@@ -1,0 +1,28 @@
+<svg width="22" height="22" enable-background="new" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g id="pressed-center">
+  <g transform="translate(46)">
+   <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  </g>
+  <circle cx="57" cy="11" r="11" fill="#ffffff" opacity=".25"/>
+  <path d="m52.5 11c-0.277 0-0.5 0.223-0.5 0.5s0.223 0.5 0.5 0.5h9c0.277 0 0.5-0.223 0.5-0.5s-0.223-0.5-0.5-0.5h-9z" fill="#dedede"/>
+ </g>
+ <g id="hover-center">
+  <g transform="translate(23)">
+   <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  </g>
+  <circle cx="34" cy="11" r="11" fill="#ffffff" opacity=".15"/>
+  <path d="m29.5 11c-0.277 0-0.5 0.223-0.5 0.5s0.223 0.5 0.5 0.5h9c0.277 0 0.5-0.223 0.5-0.5s-0.223-0.5-0.5-0.5h-9z" fill="#dedede"/>
+ </g>
+ <g id="active-center">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m6.5 11c-0.277 0-0.5 0.223-0.5 0.5s0.223 0.5 0.5 0.5h9c0.277 0 0.5-0.223 0.5-0.5s-0.223-0.5-0.5-0.5h-9z" fill="#dedede"/>
+ </g>
+ <g id="inactive-center" transform="translate(73.5)" opacity=".35">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m6.5 11c-0.277 0-0.5 0.223-0.5 0.5s0.223 0.5 0.5 0.5h9c0.277 0 0.5-0.223 0.5-0.5s-0.223-0.5-0.5-0.5z" fill="#dedede"/>
+ </g>
+ <g id="deactivated-center" transform="translate(98.5)" opacity=".35">
+  <rect width="22" height="22" fill="#000000" opacity=".001"/>
+  <path d="m6.5 11c-0.277 0-0.5 0.223-0.5 0.5s0.223 0.5 0.5 0.5h9c0.277 0 0.5-0.223 0.5-0.5s-0.223-0.5-0.5-0.5z" fill="#dedede"/>
+ </g>
+</svg>
