@@ -129,7 +129,13 @@ install() {
   [[ -d ${WALLPAPER_DIR}/${name}${theme} ]]                                            && rm -rf ${WALLPAPER_DIR}/${name}${theme}
   [[ -d ${WALLPAPER_DIR}/${name}${round}${color} ]]                                    && rm -rf ${WALLPAPER_DIR}/${name}${round}${color}
 
-  cp -r ${SRC_DIR}/aurorae/${name}${round}${color}${solid}                             ${AURORAE_DIR}
+
+  if [[ "$round" == '-round' ]]; then
+    cp -r ${SRC_DIR}/aurorae/${name}${round}${color}${solid}                           ${AURORAE_DIR}
+  else
+    cp -r ${SRC_DIR}/aurorae/${name}${color}                                           ${AURORAE_DIR}
+  fi
+
   cp -r ${SRC_DIR}/wallpaper/${name}${theme}                                           ${WALLPAPER_DIR}
 
   if [[ "$round" == '-round' ]]; then
