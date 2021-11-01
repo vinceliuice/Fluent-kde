@@ -150,25 +150,10 @@ install() {
     mkdir -p                                                                           ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
     cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}${theme}${color}/* ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
 
-    if [[ "$solid" == '-solid' ]]; then
-      sed -i "s|Name=${name}${round}${theme}${color}|Name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
-      sed -i "s|Name=com.github.vinceliuice.${name}${round}${theme}${color}|Name=com.github.vinceliuice.${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
-      sed -i "s|theme=__aurorae__svg__${name}${round}${color}|theme=__aurorae__svg__${name}${round}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
-      sed -i "s|name=${name}${round}${theme}${color}|name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
-    fi
-
     mkdir -p                                                                           ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/dialogs/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/dialogs
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/widgets
-
-    if [[ "$solid" == '-solid' ]]; then
-      cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}${solid}/*       ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
-      sed -i "s|enabled=true|enabled=false|"                                           ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
-      rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/{solid,translucent}
-    fi
-
-    sed -i "s|Name=Fluent${round}|Name=${name}${round}${theme}${color}${solid}|"       ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
 
     if [[ "$theme" != '' ]]; then
       sed -i "s|defaultWallpaperTheme=Fluent|defaultWallpaperTheme=Fluent${theme}|"    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
@@ -180,6 +165,22 @@ install() {
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${solid}
     mkdir -p                                                                           ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${solid}
     cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}/*     ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${solid}
+  fi
+
+  sed -i "s|Name=Fluent${round}|Name=${name}${round}${theme}${color}${solid}|"         ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
+
+  if [[ "$solid" == '-solid' ]]; then
+    # plasma theme
+    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}${solid}/*         ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
+    sed -i "s|enabled=true|enabled=false|"                                             ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
+    rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/{solid,translucent}
+    # global theme
+    sed -i "s|Name=${name}${round}${theme}${color}|Name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
+    sed -i "s|Name=com.github.vinceliuice.${name}${round}${theme}${color}|Name=com.github.vinceliuice.${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
+    if [[ "$round" == '-round' ]]; then
+      sed -i "s|theme=__aurorae__svg__${name}${round}${color}|theme=__aurorae__svg__${name}${round}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
+    fi
+    sed -i "s|name=${name}${round}${theme}${color}|name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
   fi
 
   if [[ "$round" == '-round' ]]; then
@@ -201,10 +202,12 @@ while [[ "$#" -gt 0 ]]; do
       ;;
     --round)
       round='-round'
+      prompt -i "Install rounded version."
       shift
       ;;
     --solid)
       solid='-solid'
+      prompt -i "Install solid version."
       shift
       ;;
     -t|--theme)
