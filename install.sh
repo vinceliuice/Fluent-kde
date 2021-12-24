@@ -154,6 +154,7 @@ install() {
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/dialogs/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/dialogs
     cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/widgets
+    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/translucent/*     ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/translucent
 
     if [[ "$theme" != '' ]]; then
       sed -i "s|defaultWallpaperTheme=Fluent|defaultWallpaperTheme=Fluent${theme}|"    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
