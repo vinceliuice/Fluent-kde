@@ -13,7 +13,7 @@ spread_progressbar=true
 composite=true
 menu_shadow_depth=16
 spread_menuitems=false
-tooltip_shadow_depth=2
+tooltip_shadow_depth=7
 splitter_width=1
 scroll_width=9
 scroll_arrows=false
@@ -41,7 +41,7 @@ large_icon_size=32
 button_icon_size=16
 toolbar_icon_size=16
 combo_as_lineedit=true
-animate_states=false
+animate_states=true
 button_contents_shift=false
 combo_menu=true
 hide_combo_checkboxes=true
@@ -53,7 +53,7 @@ layout_spacing=6
 layout_margin=9
 scrollbar_in_view=true
 transient_scrollbar=true
-transient_groove=true
+transient_groove=false
 submenu_overlap=0
 tooltip_delay=0
 tree_branch_line=true
@@ -72,6 +72,8 @@ intensity=1.00
 saturation=1.00
 shadowless_popup=false
 drag_from_buttons=false
+menu_blur_radius=8
+tooltip_blur_radius=6
 
 [GeneralColors]
 window.color=#ffffff
@@ -119,6 +121,8 @@ kinetic_scrolling=false
 scroll_jump_workaround=true
 centered_forms=false
 noninteger_translucency=false
+blur_only_active_window=false
+style_vertical_toolbars=false
 
 [PanelButtonCommand]
 frame=true
