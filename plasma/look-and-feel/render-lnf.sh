@@ -6,7 +6,7 @@ OPTIPNG="$(command -v optipng)" || true
 SRC_FILE="Fluent-lnf.svg"
 
 for round in '' '-round'; do
-for theme in '' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey'; do
+for theme in '' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-teal'; do
 for color in '-light' '-dark'; do
 
   preview_id="preview${round}${theme}${color}"
