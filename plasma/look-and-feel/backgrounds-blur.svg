@@ -5,8 +5,8 @@
    version="1.1"
    viewBox="0 0 1047.7499 1587.5"
    id="svg365"
-   sodipodi:docname="wallpaper-blur.svg"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="backgrounds-blur.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -35,27 +35,47 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1504"
-     inkscape:window-height="913"
+     inkscape:window-width="1350"
+     inkscape:window-height="683"
      id="namedview367"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:zoom="0.022097087"
-     inkscape:cx="6335.6767"
-     inkscape:cy="-384.66609"
-     inkscape:window-x="435"
-     inkscape:window-y="15"
+     inkscape:zoom="0.14751784"
+     inkscape:cx="1976.0322"
+     inkscape:cy="5341.7267"
+     inkscape:window-x="35"
+     inkscape:window-y="32"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg365"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid1194" />
   </sodipodi:namedview>
   <defs
      id="defs57">
+    <linearGradient
+       id="linearGradient4092"
+       x1="-724.70001"
+       x2="-724.70001"
+       y1="-296.66"
+       y2="-175.42999"
+       gradientTransform="matrix(2.4489,0,0,2.4066,1896.2,280.49)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#4caf50"
+         offset="0"
+         id="stop4088"
+         style="stop-color:#26a69a;stop-opacity:1;" />
+      <stop
+         stop-color="#47ebb2"
+         offset="1"
+         id="stop4090" />
+    </linearGradient>
     <linearGradient
        id="linearGradient879"
        x1="10.583"
@@ -406,10 +426,10 @@
        x2="410"
        y2="-620" />
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1793">
@@ -428,10 +448,10 @@
          id="feComposite1791" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1801">
@@ -450,10 +470,10 @@
          id="feComposite1799" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1809">
@@ -472,10 +492,10 @@
          id="feComposite1807" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1817">
@@ -494,10 +514,10 @@
          id="feComposite1815" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1825">
@@ -516,10 +536,10 @@
          id="feComposite1823" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1833">
@@ -538,10 +558,10 @@
          id="feComposite1831" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1841">
@@ -560,10 +580,10 @@
          id="feComposite1839" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1849">
@@ -582,10 +602,10 @@
          id="feComposite1847" />
     </filter>
     <filter
-       height="1.2667829"
-       width="1.0944891"
-       y="-0.13339143"
-       x="-0.047244569"
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
        style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1857">
@@ -702,6 +722,67 @@
          x="-136.25999"
          y="-412.74994" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1881-3">
+      <rect
+         style="fill:#f2f2f2;stroke-width:5.70523;stroke-linecap:square"
+         id="rect1883-6"
+         width="507.99997"
+         height="285.75159"
+         x="-136.25999"
+         y="-412.75" />
+    </clipPath>
+    <filter
+       height="1.1679781"
+       width="1.0944882"
+       y="-0.083989031"
+       x="-0.047244094"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter1801-7">
+      <feGaussianBlur
+         stdDeviation="10 10"
+         result="blur"
+         id="feGaussianBlur1795-5" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix1797-3" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite1799-5" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4092"
+       id="linearGradient682"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.4489,0,0,2.4066,1896.2,280.49)"
+       x1="-724.70001"
+       y1="-296.66"
+       x2="-724.70001"
+       y2="-175.42999" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient879"
+       id="linearGradient684"
+       gradientUnits="userSpaceOnUse"
+       x1="10.583"
+       y1="-184.67999"
+       x2="225.69"
+       y2="-184.67999" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient881"
+       id="linearGradient686"
+       gradientUnits="userSpaceOnUse"
+       x1="520"
+       y1="-620"
+       x2="410"
+       y2="-620" />
   </defs>
   <g
      id="wallpaper-default-gradient"
@@ -1179,5 +1260,58 @@
        opacity="0.35"
        id="path362"
        style="fill:url(#linearGradient1266)" />
+  </g>
+  <g
+     id="wallpaper-teal-gradient"
+     transform="matrix(1,0,0,0.99999435,666.48497,1699.6844)"
+     style="filter:url(#filter1801-7)"
+     clip-path="url(#clipPath1881-3)">
+    <rect
+       x="-136.25999"
+       y="-412.75"
+       width="508"
+       height="285.75"
+       rx="0"
+       ry="0"
+       fill="url(#linearGradient1297)"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.3626"
+       style="fill:url(#linearGradient682);paint-order:stroke fill markers"
+       id="rect365" />
+    <path
+       d="m 52.917,-158.75 127,-137.58 105.83,137.58 z"
+       fill="#1a1a1a"
+       id="path367" />
+    <path
+       d="M -136.26,-127 43.39,-242.36 225.69,-127 Z"
+       fill="#ffffff"
+       opacity="0.75"
+       id="path369" />
+    <path
+       d="M 10.583,-127 43.391,-242.36 225.691,-127 Z"
+       fill="#fafbfb"
+       id="path371" />
+    <path
+       transform="scale(0.26458)"
+       d="m 680,-1160 -160,170 v 510 h 885 z"
+       fill="#b0b2b5"
+       id="path373" />
+    <path
+       d="M 232.83,-127 179.913,-306.92 371.733,-127 Z"
+       fill="#ffffff"
+       id="path375" />
+    <path
+       d="M 10.583,-127 43.391,-242.36 225.691,-127 Z"
+       fill="url(#linearGradient879)"
+       id="path377"
+       style="fill:url(#linearGradient684)" />
+    <path
+       transform="scale(0.26458)"
+       d="M 480,-716.04 V -480 h 40 v -210.72 z"
+       fill="url(#linearGradient881)"
+       opacity="0.35"
+       id="path379"
+       style="fill:url(#linearGradient686)" />
   </g>
 </svg>

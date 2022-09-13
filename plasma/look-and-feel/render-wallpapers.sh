@@ -6,7 +6,7 @@ OPTIPNG="$(command -v optipng)" || true
 SRC_FILE="backgrounds-blur.svg"
 ASSETS_DIR="backgrounds"
 
-for theme in '-default' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-light'; do
+for theme in '-default' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey' '-light'; do
 ASSETS_ID="wallpaper${theme}-gradient"
 
 if [[ -f "$ASSETS_DIR/$ASSETS_ID.png" ]]; then

@@ -3,8 +3,8 @@
 SRC_DIR="$(cd $(dirname $0) && pwd)"
 
 THEME_NAME=Fluent
-THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
-CTHEME_VARIANTS=('' 'Purple' 'Pink' 'Red' 'Orange' 'Yellow' 'Green' 'Grey')
+THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-teal')
+CTHEME_VARIANTS=('' 'Purple' 'Pink' 'Red' 'Orange' 'Yellow' 'Green' 'Grey' 'Teal')
 COLOR_VARIANTS=('' '-light' '-dark')
 
 round=
@@ -55,7 +55,7 @@ Usage: $0 [OPTION]...
 
 OPTIONS:
   -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-  -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|all] (Default: blue)
+  -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|teal|all] (Default: blue)
   -c, --color VARIANT     Specify color variant(s) [standard|light|dark] (Default: All variants)s)
   --round VARIANT         Specify round variant
   --solid VARIANT         Specify solid variant
@@ -100,6 +100,9 @@ install() {
       ;;
     -grey)
       ctheme='Grey'
+      ;;
+    -teal)
+      ctheme='Teal'
       ;;
     *)
       ctheme=''
@@ -245,6 +248,10 @@ while [[ "$#" -gt 0 ]]; do
             ;;
           grey)
             themes+=("${THEME_VARIANTS[7]}")
+            shift
+            ;;
+          teal)
+            themes+=("${THEME_VARIANTS[8]}")
             shift
             ;;
           all)
