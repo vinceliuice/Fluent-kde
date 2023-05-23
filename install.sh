@@ -125,6 +125,7 @@ install() {
   [[ "$color" == '-light' ]] && local ELSE_LIGHT="$color"
 
   [[ -d ${AURORAE_DIR}/${name}${round}${color}${solid} ]]                              && rm -rf ${AURORAE_DIR}/${name}${round}${color}${solid}
+  [[ -d ${AURORAE_DIR}/${name}-round${color}{'','-normal'} ]]                          && rm -rf ${AURORAE_DIR}/${name}${round}${color}{'','-normal'}
   [[ -d ${PLASMA_DIR}/${name}${round}${theme}${color}${solid} ]]                       && rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
   [[ -f ${SCHEMES_DIR}/${name}${ctheme}${ccolor}.colors ]]                             && rm -rf ${name}${ctheme}${ccolor}.colors
   [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid} ]] && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
@@ -135,6 +136,7 @@ install() {
 
   if [[ "$round" == '-round' ]]; then
     cp -r ${SRC_DIR}/aurorae/${name}${round}${color}${solid}                           ${AURORAE_DIR}
+    cp -r ${SRC_DIR}/aurorae/${name}${round}${color}-normal                            ${AURORAE_DIR}
   else
     cp -r ${SRC_DIR}/aurorae/${name}${color}                                           ${AURORAE_DIR}
   fi
