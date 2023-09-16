@@ -5,18 +5,12 @@ Comment=Fluent theme for plasma
 X-KDE-PluginInfo-Author=Vince Liuice
 X-KDE-PluginInfo-Email=vinceliuice@hotmail.com
 X-KDE-PluginInfo-Name=Fluent-round
-X-KDE-PluginInfo-Version=5.78.0
 X-KDE-PluginInfo-Website=https://plasma.kde.org
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-License=LGPL
-X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-EnabledByDefault=false
 X-Plasma-API=5.0
-
-[Wallpaper]
-defaultWallpaperTheme=Fluent
-defaultFileSuffix=.png
-defaultWidth=3840
-defaultHeight=2160
+X-KDE-PluginInfo-Version=2.1
 
 [ContrastEffect]
 enabled=false
