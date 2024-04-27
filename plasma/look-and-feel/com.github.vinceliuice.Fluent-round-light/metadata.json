@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "vinceliuice@hotmail.com",
+                "Name": "Vince Liuice"
+            }
+        ],
+        "Category": "",
+        "Description": "Fluent round light theme for kde plasma",
+        "Id": "com.github.vinceliuice.Fluent-round-light",
+        "License": "GPLv3",
+        "Name": "Fluent-round-light",
+        "Website": "https://github.com/vinceliuice/Fluent-kde",
+        "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+        "X-Plasma-APIVersion": "2"
+    }
+}

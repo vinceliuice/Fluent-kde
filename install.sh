@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/env bash
 
 SRC_DIR="$(cd $(dirname $0) && pwd)"
 
@@ -125,7 +125,7 @@ install() {
   [[ "$color" == '-light' ]] && local ELSE_LIGHT="$color"
 
   [[ -d ${AURORAE_DIR}/${name}${round}${color}${solid} ]]                              && rm -rf ${AURORAE_DIR}/${name}${round}${color}${solid}
-  [[ -d ${AURORAE_DIR}/${name}-round${color}{'','-normal'} ]]                          && rm -rf ${AURORAE_DIR}/${name}${round}${color}{'','-normal'}
+  [[ -d ${AURORAE_DIR}/${name}${round}${color}{'','-normal'} ]]                        && rm -rf ${AURORAE_DIR}/${name}${round}${color}{'','-normal'}
   [[ -d ${PLASMA_DIR}/${name}${round}${theme}${color}${solid} ]]                       && rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
   [[ -f ${SCHEMES_DIR}/${name}${ctheme}${ccolor}.colors ]]                             && rm -rf ${name}${ctheme}${ccolor}.colors
   [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid} ]] && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
@@ -133,6 +133,7 @@ install() {
   [[ -d ${WALLPAPER_DIR}/${name}${theme} ]]                                            && rm -rf ${WALLPAPER_DIR}/${name}${theme}
   [[ -d ${WALLPAPER_DIR}/${name}${round}${color} ]]                                    && rm -rf ${WALLPAPER_DIR}/${name}${round}${color}
 
+  prompt -i "Installing ${name}${round}${theme}${color}..."
 
   if [[ "$round" == '-round' ]]; then
     cp -r ${SRC_DIR}/aurorae/${name}${round}${color}${solid}                           ${AURORAE_DIR}
@@ -322,8 +323,6 @@ fi
 if [[ "${#cthemes[@]}" -eq 0 ]] ; then
   cthemes=("${CTHEME_VARIANTS[0]}")
 fi
-
-prompt -i "Installing '${THEME_NAME}${round} kde themes'..."
 
 for theme in "${themes[@]}"; do
   for color in "${colors[@]}"; do
