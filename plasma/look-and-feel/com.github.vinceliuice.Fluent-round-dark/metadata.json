@@ -14,6 +14,8 @@
         "Name": "Fluent-round-dark",
         "Website": "https://github.com/vinceliuice/Fluent-kde",
         "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
-        "X-Plasma-APIVersion": "2"
+        "X-Plasma-APIVersion": "2",
+        "X-Plasma-MainScript": "defaults",
+        "X-KPackage-Dependencies": "kns://colorschemes.knsrc/api.kde-look.org/1499840,kns://plasma-themes.knsrc/api.kde-look.org/1544466,kns://aurorae.knsrc/api.kde-look.org/1544469,kns://icons.knsrc/api.kde-look.org/1477945,kns://wallpaper.knsrc/api.kde-look.org/1574124,kns://sddmtheme.knsrc/api.kde-look.org/1499844,kns://xcursor.knsrc/api.kde-look.org/1499852"
     }
 }
