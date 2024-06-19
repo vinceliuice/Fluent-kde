@@ -56,5 +56,5 @@ GNU GPL v3
 
 ## preview
 
-![1](plasma/look-and-feel/com.github.vinceliuice.Fluent-light/contents/previews/fullscreenpreview.jpg)
-![2](plasma/look-and-feel/com.github.vinceliuice.Fluent-dark/contents/previews/fullscreenpreview.jpg)
+![win10](plasma/look-and-feel/com.github.vinceliuice.Fluent-dark/contents/previews/fullscreenpreview.jpg)
+![win11](plasma/look-and-feel/com.github.vinceliuice.Fluent-round-dark/contents/previews/fullscreenpreview.jpg)
