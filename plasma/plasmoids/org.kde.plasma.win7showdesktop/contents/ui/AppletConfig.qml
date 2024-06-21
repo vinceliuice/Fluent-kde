@@ -1,4 +1,7 @@
-import QtQuick 2.0
+import QtQuick 2.15
+import org.kde.kirigami as Kirigami
+
+import org.kde.plasma.plasmoid
 
 QtObject {
 	id: config
@@ -7,10 +10,12 @@ QtObject {
 	function alpha(c, newAlpha) {
 		return Qt.rgba(c.r, c.g, c.b, newAlpha)
 	}
-	property color defaultEdgeColor: alpha(theme.textColor, 0.4)
-	property color defaultHoveredColor: theme.buttonBackgroundColor
-	property color defaultPressedColor: theme.buttonHoverColor
-	property color edgeColor: plasmoid.configuration.edgeColor || defaultEdgeColor
-	property color hoveredColor: plasmoid.configuration.hoveredColor || defaultHoveredColor
-	property color pressedColor: plasmoid.configuration.pressedColor || defaultPressedColor
+	property color defaultEdgeColor: alpha(Kirigami.Theme.textColor, 0.4)
+	property color defaultHoveredColor: Kirigami.Theme.backgroundColor
+	property color defaultPressedColor: Kirigami.Theme.hoverColor
+	property color edgeColor: Plasmoid.configuration.edgeColor || defaultEdgeColor
+	property color hoveredColor: Plasmoid.configuration.hoveredColor || defaultHoveredColor
+	property color pressedColor: Plasmoid.configuration.pressedColor || defaultPressedColor
+
+	property bool isOpenSUSE: false // Replace qdbus with qdbus6 (Issue #25)
 }

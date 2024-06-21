@@ -1,507 +1,469 @@
 /*
-	Copyright (C) 2019 Chris Holland <zrenfire@gmail.com>
-	Copyright (C) 2014 Ashish Madeti <ashishmadeti@gmail.com>
+	SPDX-FileCopyrightText: 2014 Ashish Madeti <ashishmadeti@gmail.com>
+	SPDX-FileCopyrightText: 2016 Kai Uwe Broulik <kde@privat.broulik.de>
+	SPDX-FileCopyrightText: 2019 Chris Holland <zrenfire@gmail.com>
+	SPDX-FileCopyrightText: 2022 ivan (@ratijas) tkachenko <me@ratijas.tk>
 
-	This program is free software; you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation; either version 2 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License along
-	with this program; if not, write to the Free Software Foundation, Inc.,
-	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+	SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.7
-import QtQuick.Layouts 1.1
+import QtQuick 2.15
+import QtQuick.Layouts 1.3
 
-import org.kde.plasma.plasmoid 2.0
-import org.kde.plasma.core 2.0 as PlasmaCore
-// import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.core as PlasmaCore
+import org.kde.plasma.plasma5support as Plasma5Support
+import org.kde.kirigami as Kirigami
+import org.kde.ksvg as KSvg
 
-import org.kde.plasma.private.showdesktop 0.1
+import org.kde.plasma.plasmoid
 
-import org.kde.draganddrop 2.0 as DragAndDrop
-import org.kde.taskmanager 0.1 as TaskManager
+PlasmoidItem {
+	id: root
 
-Item {
-	id: widget
-
-	Layout.minimumWidth: Layout.maximumWidth
-	Layout.minimumHeight: Layout.maximumHeight
-
-	// In Latte, widgets are always Mutable.
-	property bool isInLatte: false // Latte v8
-	// Latte will set inEditMode=true when editing the dock.
-	// https://techbase.kde.org/LatteDock#latteBridge
-	property QtObject latteBridge: null // Latte v9
-	readonly property bool inLatte: latteBridge !== null
-
-	readonly property bool isWidgetUnlocked: {
-		if (isInLatte) { // Latte v8
-			return false
-		} else if (inLatte) { // Latte v9
-			return latteBridge.inEditMode
-		} else if (plasmoid.immutability != PlasmaCore.Types.Mutable) { // Plasma 5.17 and below
-			return false
-		} else { // Plasma 5.18
-			return widget.editMode
-		}
-	}
-
-	//--- containment.editMode detector
-	property var containmentInterface: null
-	readonly property bool editMode: containmentInterface ? containmentInterface.editMode : false
-	onParentChanged: {
-		if (parent) {
-			for (var obj = widget, depth = 0; !!obj; obj = obj.parent, depth++) {
-				// console.log('depth', depth, 'obj', obj)
-				if (obj.toString().startsWith('ContainmentInterface')) {
-					// desktop containment / plasmoidviewer
-					// Note: This doesn't always work. FolderViewDropArea may not yet have
-					//       ContainmentInterface as a parent when this loop runs.
-					if (typeof obj['editMode'] === 'boolean') {
-						// console.log('\t', 'obj.editMode', obj.editMode, typeof obj['editMode'])
-						widget.containmentInterface = obj
-						break
-					}
-				} else if (obj.toString().startsWith('DeclarativeDropArea')) {
-					// panel containment
-					if (typeof obj['Plasmoid'] !== 'undefined' && obj['Plasmoid'].toString().startsWith('ContainmentInterface')) {
-						if (typeof obj['Plasmoid']['editMode'] === 'boolean') {
-							// console.log('\t', 'obj.Plasmoid', obj.Plasmoid, typeof obj['Plasmoid']) // ContainmentInterface
-							// console.log('\t', 'obj.Plasmoid.editMode', obj.Plasmoid.editMode, typeof obj['Plasmoid']['editMode'])
-							widget.containmentInterface = obj.Plasmoid
-							break
-						}
-					}
-				}
-			}
-		}
-	}
-
-	//---
-	property int iconSize: units.iconSizes.smallMedium
-	property int size: {
-		if (isWidgetUnlocked) {
-			return iconSize
-		} else {
-			return Math.max(1, plasmoid.configuration.size) * units.devicePixelRatio
-		}
-	}
+	preferredRepresentation: fullRepresentation
+	toolTipSubText: activeController.description
 
 	AppletConfig {
 		id: config
 	}
 
-	//---
-	state: {
-		if (plasmoid.formFactor == PlasmaCore.Types.Vertical) return "vertical"
-		if (plasmoid.formFactor == PlasmaCore.Types.Horizontal) return "horizontal"
-		return "square"
+	Plasmoid.icon: "transform-move"
+	Plasmoid.title: activeController.title
+	Plasmoid.onActivated: {
+		if (isPeeking) {
+			isPeeking = false;
+			peekController.toggle();
+		}
+		activeController.toggle();
 	}
 
-	states: [
-		State { name: "square"
-			PropertyChanges {
-				target: widget
-				Layout.minimumWidth: units.iconSizeHints.desktop
-				Layout.minimumHeight: units.iconSizeHints.desktop
-				Layout.maximumWidth: -1
-				Layout.maximumHeight: -1
-				iconSize: units.iconSizeHints.desktop
-			}
-			PropertyChanges {
-				target: buttonRect
-				y: 0
-				x: 0
-				width: plasmoid.width
-				height: plasmoid.height
-			}
-			PropertyChanges {
-				target: edgeLine
-				color: "transparent"
-				anchors.fill: edgeLine.parent
-				border.color: config.edgeColor
-			}
-		},
-		State { name: "vertical" // ...panel (fat short button)
-			// Assume it's on the bottom. Breeze has margins of top=4 right=5 bottom=1 left=N/A
-			PropertyChanges {
-				target: widget
-				Layout.maximumWidth: plasmoid.width
-				Layout.maximumHeight: widget.size // size + bottomMargin = totalHeight
-				iconSize: Math.min(plasmoid.width, units.iconSizes.smallMedium)
-			}
-			PropertyChanges {
-				target: buttonRect
-				rightMargin: 5
-				bottomMargin: 5
-			}
-			PropertyChanges {
-				target: edgeLine
-				height: 1 * units.devicePixelRatio
-			}
-			AnchorChanges {
-				target: edgeLine
-				anchors.left: edgeLine.parent.left
-				anchors.top: edgeLine.parent.top
-				anchors.right: edgeLine.parent.right
-			}
-		},
-		State { name: "horizontal" // ...panel (thin tall button)
-			// Assume it's on the right. Breeze has margins of top=4 right=5 bottom=1 left=N/A
-			PropertyChanges {
-				target: widget
-				Layout.maximumWidth: widget.size // size + rightMargin = totalWidth
-				Layout.maximumHeight: plasmoid.height
-				iconSize: Math.min(plasmoid.height, units.iconSizes.smallMedium)
-			}
-			PropertyChanges {
-				target: buttonRect
-				topMargin: 4
-				rightMargin: 5
-				bottomMargin: 3
-			}
-			PropertyChanges {
-				target: edgeLine
-				width: 1 * units.devicePixelRatio
-			}
-			AnchorChanges {
-				target: edgeLine
-				anchors.left: edgeLine.parent.left
-				anchors.top: edgeLine.parent.top
-				anchors.bottom: edgeLine.parent.bottom
-			}
-		}
-	]
+	Plasmoid.backgroundHints: PlasmaCore.Types.NoBackground
 
-	Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
-	Plasmoid.onActivated: widget.performClick()
+	Layout.minimumWidth: Kirigami.Units.iconSizes.medium
+	Layout.minimumHeight: Kirigami.Units.iconSizes.medium
 
-	function performClick() {
-		if (plasmoid.configuration.click_action == 'minimizeall') {
-			minimizeAll.toggleActive()
-		} else if (plasmoid.configuration.click_action == 'run_command') {
-			widget.exec(plasmoid.configuration.click_command)
-		} else { // Default: showdesktop
-			showdesktop.showingDesktop = !showdesktop.showingDesktop
+	Layout.maximumWidth: vertical ? Layout.minimumWidth : Math.max(1, Plasmoid.configuration.size)
+	Layout.maximumHeight: vertical ? Math.max(1, Plasmoid.configuration.size) : Layout.minimumHeight
+
+	Layout.preferredWidth: Layout.maximumWidth
+	Layout.preferredHeight: Layout.maximumHeight
+
+	Plasmoid.constraintHints: Plasmoid.CanFillArea
+
+	readonly property bool inPanel: [PlasmaCore.Types.TopEdge, PlasmaCore.Types.RightEdge, PlasmaCore.Types.BottomEdge, PlasmaCore.Types.LeftEdge]
+			.includes(Plasmoid.location)
+
+	readonly property bool horizontal: Plasmoid.location === PlasmaCore.Types.TopEdge || Plasmoid.location === PlasmaCore.Types.BottomEdge
+	readonly property bool vertical: Plasmoid.location === PlasmaCore.Types.RightEdge || Plasmoid.location === PlasmaCore.Types.LeftEdge
+
+	readonly property Controller primaryController: {
+		if (Plasmoid.configuration.click_action == "minimizeall") {
+			return minimizeAllController;
+		} else if (Plasmoid.configuration.click_action == "showdesktop") {
+			return peekController;
+		} else {
+			return commandController;
 		}
 	}
 
-	function performMouseWheelUp() {
-		widget.exec(plasmoid.configuration.mousewheel_up)
+	readonly property Controller activeController: {
+		if (minimizeAllController.active) {
+			return minimizeAllController;
+		} else {
+			return primaryController;
+		}
 	}
 
-	function performMouseWheelDown() {
-		widget.exec(plasmoid.configuration.mousewheel_down)
-	}
+	property bool isPeeking: false
 
-	//--- ShowDesktop
-	// https://github.com/KDE/plasma-desktop/blob/master/applets/showdesktop/package/contents/ui/main.qml
-	ShowDesktop {
-		id: showdesktop
-		property bool isPeeking: false
-		onIsPeekingChanged: {
+	MouseArea {
+		id: mouseArea
+		anchors.fill: parent
+		anchors.rightMargin: -panelMargins.panelEdgeMargin
+
+		activeFocusOnTab: true
+		hoverEnabled: true
+
+		PanelMargins {
+			id: panelMargins
+		}
+
+		onClicked: Plasmoid.activated();
+
+		onEntered: {
+			if (Plasmoid.configuration.peekingEnabled)
+				peekTimer.start();
+		}
+		onExited: {
+			peekTimer.stop();
 			if (isPeeking) {
-				showingDesktop = true
+				isPeeking = false;
+				peekController.toggle();
 			}
 		}
 
-		function initPeeking() {
-			// console.log('initPeeking')
-			// console.log('showingDesktop', showingDesktop)
-			// console.log('peekTimer.running', peekTimer.running)
-			if (!showingDesktop) {
-				if (plasmoid.configuration.peekingEnabled) {
-					peekTimer.restart()
-				}
+		// org.kde.plasma.volume
+		property int wheelDelta: 0
+		onWheel: wheel => {
+			const delta = (wheel.inverted ? -1 : 1) * (wheel.angleDelta.y ? wheel.angleDelta.y : -wheel.angleDelta.x);
+			wheelDelta += delta;
+			// Magic number 120 for common "one click"
+			// See: https://qt-project.org/doc/qt-5/qml-qtquick-wheelevent.html#angleDelta-prop
+			while (wheelDelta >= 120) {
+				wheelDelta -= 120;
+				performMouseWheelUp();
+			}
+			while (wheelDelta <= -120) {
+				wheelDelta += 120;
+				performMouseWheelDown();
 			}
 		}
 
-		function cancelPeek() {
-			// console.log('cancelPeek')
-			// console.log('peekTimer.running', peekTimer.running)
-			peekTimer.stop()
-			if (isPeeking) {
-				isPeeking = false
-				showingDesktop = false
+		Keys.onPressed: {
+			switch (event.key) {
+			case Qt.Key_Space:
+			case Qt.Key_Enter:
+			case Qt.Key_Return:
+			case Qt.Key_Select:
+				Plasmoid.activated();
+				break;
 			}
 		}
-	}
 
-	//--- MinimizeAll
-	// https://github.com/KDE/plasma-desktop/blob/master/applets/minimizeall/package/contents/ui/main.qml
-	QtObject {
-		id: minimizeAll
-		property bool active: false
-		property var minimizedClients: [] //list of persistentmodelindexes from task manager model of clients minimised by us
+		Accessible.name: Plasmoid.title
+		Accessible.description: toolTipSubText
+		Accessible.role: Accessible.Button
 
-		property var taskModel: TaskManager.TasksModel {
-			id: tasksModel
-			sortMode: TaskManager.TasksModel.SortDisabled
-			groupMode: TaskManager.TasksModel.GroupDisabled
-		}
-		property var taskModelConnection: Connections {
-			target: tasksModel
-			enabled: minimizeAll.active
-
-			onActiveTaskChanged: {
-				if (tasksModel.activeTask.valid) { //to suppress changing focus to non windows, such as the desktop
-					minimizeAll.active = false
-					minimizeAll.minimizedClients = []
-				}
-			}
-			onVirtualDesktopChanged: minimizeAll.deactivate()
-			onActivityChanged: minimizeAll.deactivate()
+		PeekController {
+			id: peekController
 		}
 
-		function activate() {
-			var clients = []
-			for (var i = 0; i < tasksModel.count; i++) {
-				var idx = tasksModel.makeModelIndex(i)
-				if (!tasksModel.data(idx, TaskManager.AbstractTasksModel.IsMinimized)) {
-					tasksModel.requestToggleMinimized(idx)
-					clients.push(tasksModel.makePersistentModelIndex(i))
-				}
-			}
-			minimizedClients = clients
-			active = true
+		MinimizeAllController {
+			id: minimizeAllController
 		}
 
-		function deactivate() {
-			active = false;
-			for (var i = 0; i < minimizedClients.length; i++) {
-				var idx = minimizedClients[i]
-				//client deleted, do nothing
-				if (!idx.valid) {
-					continue
-				}
-				//if the user has restored it already, do nothing
-				if (!tasksModel.data(idx, TaskManager.AbstractTasksModel.IsMinimized)) {
-					continue
-				}
-				tasksModel.requestToggleMinimized(idx)
-			}
-			minimizedClients = []
+		CommandController {
+			id: commandController
 		}
 
-		function toggleActive() {
-			if (active) {
-				deactivate()
-			} else {
-				activate()
-			}
-		}
-	}
-	//---
-
-	Timer {
-		id: peekTimer
-		interval: plasmoid.configuration.peekingThreshold
-		onTriggered: {
-			showdesktop.isPeeking = true
-		}
-	}
-
-	Rectangle {
-		id: buttonRect
-		color: "transparent"
-
-		property int topMargin: 0
-		property int rightMargin: 0
-		property int bottomMargin: 0
-		property int leftMargin: 0
-
-		y: -topMargin
-		x: -leftMargin
-		width: leftMargin + plasmoid.width + rightMargin
-		height: topMargin + plasmoid.height + bottomMargin
-
-		Item {
+		Kirigami.Icon {
 			anchors.fill: parent
+			active: mouseArea.containsMouse || activeController.active
+			visible: Plasmoid.containment.corona.editMode
+			source: Plasmoid.icon
+		}
 
-			// Rectangle {
-			// 	id: surfaceNormal
-			// 	anchors.fill: parent
-			// 	anchors.topMargin: 1
-			// 	color: "transparent"
-			// 	border.color: theme.buttonBackgroundColor
-			// }
+		// also activate when dragging an item over the plasmoid so a user can easily drag data to the desktop
+		DropArea {
+			anchors.fill: parent
+			onEntered: activateTimer.start()
+			onExited: activateTimer.stop()
+		}
 
-			Rectangle {
-				id: surfaceHovered
-				anchors.fill: parent
-				anchors.topMargin: 1
-				color: config.hoveredColor
-				opacity: 0
+		Timer {
+			id: activateTimer
+			interval: 250 // to match TaskManager
+			onTriggered: Plasmoid.activated()
+		}
+
+		Timer {
+			id: peekTimer
+			interval: Plasmoid.configuration.peekingThreshold
+			onTriggered: {
+				if (!minimizeAllController.active && !peekController.active) {
+					isPeeking = true;
+					peekController.toggle();
+				}
+			}
+		}
+
+		state: {
+			if (mouseArea.containsPress) {
+				return "pressed";
+			} else if (mouseArea.containsMouse || mouseArea.activeFocus) {
+				return "hover";
+			} else {
+				return "normal";
+			}
+		}
+
+		component ButtonSurface : Rectangle {
+			property var containerMargins: {
+				let item = this;
+				while (item.parent) {
+					item = item.parent;
+					if (item.isAppletContainer) {
+						return item.getMargins;
+					}
+				}
+				return undefined;
 			}
 
-			Rectangle {
-				id: surfacePressed
-				anchors.fill: parent
-				anchors.topMargin: 1
-				color: config.pressedColor
-				opacity: 0
+			anchors {
+				fill: parent
+				property bool returnAllMargins: true
+				// The above makes sure margin is returned even for side margins
+				// that would be otherwise turned off.
+				topMargin: !vertical && containerMargins ? -containerMargins('top', returnAllMargins) : 0
+				leftMargin: vertical && containerMargins ? -containerMargins('left', returnAllMargins) : 0
+				rightMargin: vertical && containerMargins ? -containerMargins('right', returnAllMargins) : 0
+				bottomMargin: !vertical && containerMargins ? -containerMargins('bottom', returnAllMargins) : 0
 			}
+			Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.longDuration; easing.type: Easing.OutCubic } }
+		}
 
-			Rectangle {
-				id: edgeLine
-				color: "transparent"
-				border.color: config.edgeColor
-				border.width: 1 * units.devicePixelRatio
-			}
+		ButtonSurface {
+			id: hoverSurface
+			color: Plasmoid.configuration.hoveredColor
+			opacity: mouseArea.state === "hover" ? 1 : 0
+		}
 
-			state: {
-				if (control.containsPress) return "pressed"
-				if (control.containsMouse) return "hovered"
-				return "normal"
-			}
+		ButtonSurface {
+			id: pressedSurface
+			color: Plasmoid.configuration.pressedColor
+			opacity: mouseArea.state === "pressed" ? 1 : 0
+		}
 
+		Rectangle {
+			id: edgeLine
 			states: [
-				State { name: "normal" },
-				State { name: "hovered"
+				State {
+					name: "desktopWidget"
+					when: !root.inPanel
+					// Draw border around button
+					AnchorChanges {
+						target: edgeLine
+						anchors.left: edgeLine.parent.left
+						anchors.right: edgeLine.parent.right
+						anchors.top: edgeLine.parent.top
+						anchors.bottom: edgeLine.parent.bottom
+					}
 					PropertyChanges {
-						target: surfaceHovered
-						opacity: 1
+						target: edgeLine
+						color: "transparent"
+						border.color: Plasmoid.configuration.edgeColor
+						border.width: 1
 					}
 				},
-				State { name: "pressed"
+				State {
+					name: "horizontalPanel"
+					when: root.horizontal
+					// Draw line on left of button (assume location at right edge of panel)
+					AnchorChanges {
+						target: edgeLine
+						anchors.left: edgeLine.parent.left
+						anchors.right: undefined
+						anchors.top: edgeLine.parent.top
+						anchors.bottom: edgeLine.parent.bottom
+					}
 					PropertyChanges {
-						target: surfacePressed
-						opacity: 1
+						target: edgeLine
+						color: Plasmoid.configuration.edgeColor
+						width: 1
+						border.color: "transparent"
+						border.width: 0
+					}
+				},
+				State {
+					name: "verticalPanel"
+					when: root.vertical
+					// Draw line on top of button (assume location at bottom edge of panel)
+					AnchorChanges {
+						target: edgeLine
+						anchors.left: edgeLine.parent.left
+						anchors.right: edgeLine.parent.right
+						anchors.top: edgeLine.parent.top
+						anchors.bottom: undefined
+					}
+					PropertyChanges {
+						target: edgeLine
+						color: Plasmoid.configuration.edgeColor
+						height: 1
+						border.color: "transparent"
+						border.width: 0
 					}
 				}
 			]
-	
-			transitions: [
-				Transition {
-					to: "normal"
-					//Cross fade from pressed to normal
-					ParallelAnimation {
-						NumberAnimation { target: surfaceHovered; property: "opacity"; to: 0; duration: 100 }
-						NumberAnimation { target: surfacePressed; property: "opacity"; to: 0; duration: 100 }
+		}
+
+		// Active/not active indicator
+		KSvg.FrameSvgItem {
+			property var containerMargins: {
+				let item = this;
+				while (item.parent) {
+					item = item.parent;
+					if (item.isAppletContainer) {
+						return item.getMargins;
 					}
 				}
-			]
-
-			MouseArea {
-				id: control
-				anchors.fill: parent
-				hoverEnabled: true
-				onClicked: {
-					if (showdesktop.isPeeking && showdesktop.showingDesktop) {
-						showdesktop.isPeeking = false
-					} else {
-						peekTimer.stop()
-
-						if (true) {
-							widget.performClick()
-						} else {
-							showdesktop.showingDesktop = false
-							minimizeAll.toggleActive()
-						}
-					}
-				}
-				onEntered: {
-					// console.log('onEntered')
-					showdesktop.initPeeking()
-				}
-				onExited: {
-					// console.log('onExited')
-					showdesktop.cancelPeek()
-				}
-
-
-				// org.kde.plasma.volume
-				property int wheelDelta: 0
-				onWheel: {
-					var delta = wheel.angleDelta.y || wheel.angleDelta.x
-					wheelDelta += delta
-					// Magic number 120 for common "one click"
-					// See: http://qt-project.org/doc/qt-5/qml-qtquick-wheelevent.html#angleDelta-prop
-					while (wheelDelta >= 120) {
-						wheelDelta -= 120
-						widget.performMouseWheelUp()
-					}
-					while (wheelDelta <= -120) {
-						wheelDelta += 120
-						widget.performMouseWheelDown()
-					}
-					wheel.accepted = true
-				}
+				return undefined;
 			}
 
-			DragAndDrop.DropArea {
-				anchors.fill: parent
-				onDragEnter: {
-					// console.log('showDesktopDropArea.onDragEnter')
-					// showdesktop.initPeeking()
-					showdesktop.showingDesktop = true
+			anchors {
+				fill: parent
+				property bool returnAllMargins: true
+				// The above makes sure margin is returned even for side margins
+				// that would be otherwise turned off.
+				topMargin: !vertical && containerMargins ? -containerMargins('top', returnAllMargins) : 0
+				leftMargin: vertical && containerMargins ? -containerMargins('left', returnAllMargins) : 0
+				rightMargin: vertical && containerMargins ? -containerMargins('right', returnAllMargins) : 0
+				bottomMargin: !vertical && containerMargins ? -containerMargins('bottom', returnAllMargins) : 0
+			}
+			imagePath: "widgets/tabbar"
+			visible: opacity > 0
+			prefix: {
+				let prefix;
+				switch (Plasmoid.location) {
+				case PlasmaCore.Types.LeftEdge:
+					prefix = "west-active-tab";
+					break;
+				case PlasmaCore.Types.TopEdge:
+					prefix = "north-active-tab";
+					break;
+				case PlasmaCore.Types.RightEdge:
+					prefix = "east-active-tab";
+					break;
+				default:
+					prefix = "south-active-tab";
+				}
+				if (!hasElementPrefix(prefix)) {
+					prefix = "active-tab";
+				}
+				return prefix;
+			}
+			opacity: activeController.active ? 1 : 0
+
+			Behavior on opacity {
+				NumberAnimation {
+					duration: Kirigami.Units.shortDuration
+					easing.type: Easing.InOutQuad
 				}
 			}
 		}
 
-		// PlasmaComponents.Button {
-		// 	anchors.fill: parent
-		// 	// anchors.left: parent.left
-		// 	// anchors.top: parent.top + 3
-		// 	// anchors.right: parent.right + 5
-		// 	// anchors.bottom: parent.bottom + 5
-		// 	// width: parent.width
-		// 	// height: parent.height
-		// 	onClicked: showdesktop.showDesktop()
-		// }
+		PlasmaCore.ToolTipArea {
+			id: toolTip
+			anchors.fill: parent
+			mainText: Plasmoid.title
+			subText: toolTipSubText
+			textFormat: Text.PlainText
+		}
 	}
 
-	PlasmaCore.IconItem {
-		anchors.centerIn: parent
-		visible: widget.isWidgetUnlocked
-		source: "transform-move"
-		width: units.iconSizes.smallMedium
-		height: units.iconSizes.smallMedium
-	}
-
-	// org.kde.plasma.mediacontrollercompact
-	PlasmaCore.DataSource {
+	// https://invent.kde.org/plasma/plasma5support/-/tree/master/src/declarativeimports/datasource.h
+	Plasma5Support.DataSource {
 		id: executeSource
 		engine: "executable"
 		connectedSources: []
-		onNewData: {
-			//we get new data when the process finished, so we can remove it
-			disconnectSource(sourceName)
+
+		property var listeners: ({}) // Empty Map
+
+		signal exited(string cmd, int exitCode, int exitStatus, string stdout, string stderr)
+
+		function getUniqueId(cmd) {
+			// Note: we assume that 'cmd' is executed quickly so that a previous call
+			// with the same 'cmd' has already finished (otherwise no new cmd will be
+			// added because it is already in the list)
+			// Workaround: We append spaces onto the user's command to workaround this.
+			var cmd2 = cmd
+			for (var i = 0; i < 10; i++) {
+				if (connectedSources.includes(cmd2)) {
+					cmd2 += ' '
+				}
+			}
+			return cmd2
+		}
+		function exec(cmd, callback) {
+			const cmdId = getUniqueId(cmd)
+			if (typeof callback === 'function') {
+				if (listeners[cmdId]) {
+					exited.disconnect(listeners[cmdId])
+					delete listeners[cmdId]
+				}
+				var listener = execCallback.bind(executeSource, callback)
+				listeners[cmdId] = listener
+			}
+			connectSource(cmdId)
+		}
+		function execCallback(callback, cmd, exitCode, exitStatus, stdout, stderr) {
+			delete listeners[cmd]
+			callback(cmd, exitCode, exitStatus, stdout, stderr)
+		}
+		onNewData: function(sourceName, data) {
+			const cmd = sourceName
+			const exitCode = data["exit code"]
+			const exitStatus = data["exit status"]
+			const stdout = data["stdout"]
+			const stderr = data["stderr"]
+			const listener = listeners[cmd]
+			if (listener) {
+				listener(cmd, exitCode, exitStatus, stdout, stderr)
+			}
+			exited(cmd, exitCode, exitStatus, stdout, stderr)
+			disconnectSource(sourceName) // cmd finished
 		}
 	}
+
 	function exec(cmd) {
-		//Note: we assume that 'cmd' is executed quickly so that a previous call
-		//with the same 'cmd' has already finished (otherwise no new cmd will be
-		//added because it is already in the list)
-		executeSource.connectSource(cmd)
+		let cmd2 = executeSource.getUniqueId(cmd)
+		if (config.isOpenSUSE) {
+			cmd2 = cmd2.replace(/^qdbus /, 'qdbus6 ')
+		}
+		executeSource.connectSource(cmd2)
 	}
 
+	function performMouseWheelUp() {
+		root.exec(Plasmoid.configuration.mousewheel_up)
+	}
+
+	function performMouseWheelDown() {
+		root.exec(Plasmoid.configuration.mousewheel_down)
+	}
+
+	Plasmoid.contextualActions: [
+		PlasmaCore.Action {
+			visible: Plasmoid.immutability != PlasmaCore.Types.SystemImmutable
+			readonly property bool isLocked: Plasmoid.immutability != PlasmaCore.Types.Mutable
+			text: isLocked ? i18n("Unlock Widgets") : i18n("Lock Widgets")
+			icon.name: isLocked ? "object-unlocked" : "object-locked"
+			onTriggered: {
+				if (Plasmoid.immutability == PlasmaCore.Types.Mutable) {
+					Plasmoid.containment.corona.setImmutability(PlasmaCore.Types.UserImmutable)
+				} else if (Plasmoid.immutability == PlasmaCore.Types.UserImmutable) {
+					Plasmoid.containment.corona.setImmutability(PlasmaCore.Types.Mutable)
+				} else {
+					// ignore SystemImmutable
+				}
+			}
+		},
+		PlasmaCore.Action {
+			text: minimizeAllController.titleInactive
+			checkable: true
+			checked: minimizeAllController.active
+			toolTip: minimizeAllController.description
+			enabled: !peekController.active
+			onTriggered: minimizeAllController.toggle()
+		},
+		PlasmaCore.Action {
+			text: peekController.titleInactive
+			checkable: true
+			checked: peekController.active
+			toolTip: peekController.description
+			enabled: !minimizeAllController.active
+			onTriggered: peekController.toggle()
+		}
+	]
+
+	function detectSUSE() {
+		executeSource.exec('env | grep VENDOR', function(cmd, exitCode, exitStatus, stdout, stderr) {
+			if (stdout.replace(/\n/g, ' ').trim() == 'VENDOR=suse') {
+				config.isOpenSUSE = true
+			}
+			// console.log('config.isOpenSUSE', config.isOpenSUSE)
+		})
+	}
 
 	Component.onCompleted: {
-		plasmoid.setAction("toggleLockWidgets", i18n("Toggle Lock Widgets (Plasma 5.18)"), "object-locked")
-		plasmoid.setAction("showdesktop", i18nd("plasma_applet_org.kde.plasma.showdesktop", "Show Desktop"), "user-desktop")
-		plasmoid.setAction("minimizeall", i18ndc("plasma_applet_org.kde.plasma.showdesktop", "@action", "Minimize All Windows"), "user-desktop")
-	}
-
-	//---
-	function action_toggleLockWidgets() {
-		var cmd = 'qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(!locked)"'
-		widget.exec(cmd)
-	}
-
-	function action_showdesktop() {
-		showdesktop.showingDesktop = true
-	}
-
-	function action_minimizeall() {
-		minimizeAll.toggleActive()
+		detectSUSE()
 	}
 }

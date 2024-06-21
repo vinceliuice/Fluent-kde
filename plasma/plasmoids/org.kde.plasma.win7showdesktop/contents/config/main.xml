@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+			http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
 	<kcfgfile name=""/>
 
 	<group name="General">
@@ -19,7 +22,7 @@
 			<default>qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"</default>
 		</entry>
 		<entry name="size" type="int">
-			<default>3</default>
+			<default>8</default>
 		</entry>
 		<entry name="peekingEnabled" type="bool">
 			<default>false</default>

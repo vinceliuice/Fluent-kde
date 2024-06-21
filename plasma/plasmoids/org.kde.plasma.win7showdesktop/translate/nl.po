@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: win7showdesktop\n"
 "Report-Msgid-Bugs-To: https://github.com/Zren/plasma-applet-win7showdesktop\n"
-"POT-Creation-Date: 2020-03-29 16:37-0400\n"
+"POT-Creation-Date: 2024-05-05 19:08-0400\n"
 "PO-Revision-Date: 2020-03-30 13:57+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <vistausss@outlook.com>\n"
@@ -18,9 +18,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3\n"
 
+#: ../metadata.json
+msgid "Show Desktop (Win7)"
+msgstr "Bureaublad tonen (Win7)"
+
+#: ../metadata.json
+msgid "Show the Plasma desktop"
+msgstr "Toont het Plasma-bureaublad"
+
 #: ../contents/config/config.qml
 msgid "General"
 msgstr "Algemeen"
+
+#: ../contents/ui/CommandController.qml
+msgctxt "@action:button"
+msgid "Run custom command"
+msgstr ""
+
+#: ../contents/ui/CommandController.qml
+msgctxt "@info:tooltip"
+msgid "Run user-defined command when pressed"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Look"
@@ -33,6 +51,11 @@ msgstr "Grootte:"
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "px"
 msgstr "px"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+#, c-format
+msgid " + %1px (Panel Margin) = %2px"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Edge Color:"
@@ -53,6 +76,12 @@ msgstr "Klikken"
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Run Command"
 msgstr "Opdracht uitvoeren"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid ""
+"Note that in openSUSE, <b>qdbus</b> is automatically replaced with "
+"<b>qdbus6</b>."
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Mouse Wheel"
@@ -102,10 +131,16 @@ msgstr "Gluurvertraging:"
 msgid "ms"
 msgstr "ms"
 
-#: ../contents/ui/lib/AppletVersion.qml
-msgid "<b>Version:</b> %1"
-msgstr "<b>Versie:</b> %1"
+#: ../contents/ui/main.qml
+msgid "Unlock Widgets"
+msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Toggle Lock Widgets (Plasma 5.18)"
-msgstr "Widgets ver-/ontgrendelen (Plasma 5.18)"
+msgid "Lock Widgets"
+msgstr ""
+
+#~ msgid "<b>Version:</b> %1"
+#~ msgstr "<b>Versie:</b> %1"
+
+#~ msgid "Toggle Lock Widgets"
+#~ msgstr "Widgets ver-/ontgrendelen"

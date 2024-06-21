@@ -1,0 +1,37 @@
+{
+	"KPackageStructure": "Plasma/Applet",
+	"KPlugin": {
+		"Authors": [
+			{
+				"Email": "zrenfire@gmail.com",
+				"Name": "Chris Holland"
+			}
+		],
+		"BugReportUrl": "https://github.com/Zren/plasma-applet-win7showdesktop/issues",
+		"Category": "Windows and Tasks",
+		"Description": "Show the Plasma desktop",
+		"Description[ar]": "أظهر سطح مكتب بلازما",
+		"Description[es]": "Mostrar el escritorio de Plasma",
+		"Description[fr]": "Afficher le bureau Plasma",
+		"Description[nl]": "Toont het Plasma-bureaublad",
+		"Description[pt_BR]": "Mostra a área de trabalho do Plasma",
+		"FormFactors": [
+			"desktop"
+		],
+		"Icon": "user-desktop",
+		"Id": "org.kde.plasma.win7showdesktop",
+		"License": "GPL-2.0+",
+		"Name": "Show Desktop (Win7)",
+		"Name[ar]": "أظهر سطح المكتب (Win7)",
+		"Name[es]": "Mostrar el escritorio (Win7)",
+		"Name[fr]": "Afficher un bureau (Win7)",
+		"Name[nl]": "Bureaublad tonen (Win7)",
+		"Name[pt_BR]": "Exibir a área de trabalho (Win7)",
+		"Version": "14",
+		"Website": "https://github.com/Zren/plasma-applet-win7showdesktop"
+	},
+	"X-Plasma-API-Minimum-Version": "6.0",
+	"X-Plasma-Provides": [
+		"org.kde.plasma.windowmanagement"
+	]
+}

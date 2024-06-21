@@ -1,31 +1,31 @@
-# Translation of win7showdesktop in brazilian portuguese
-# Copyright (C) 2019
+# Translation of win7showdesktop in ar
+# Copyright (C) 2022
 # This file is distributed under the same license as the win7showdesktop package.
-# Andrew Miranda <kryptusql@protonmail.com>, 2020.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: win7showdesktop \n"
+"Project-Id-Version: win7showdesktop\n"
 "Report-Msgid-Bugs-To: https://github.com/Zren/plasma-applet-win7showdesktop\n"
 "POT-Creation-Date: 2024-05-05 19:08-0400\n"
-"PO-Revision-Date: 2020-15-01 10:25-0300\n"
-"Last-Translator: Andrew Miranda <kryptusql@protonmail.com>\n"
-"Language-Team: Portuguese Brazilian <kryptusql@protonmail.com>\n"
-"Language: Portuguese Brazilian \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ar <LL@li.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../metadata.json
 msgid "Show Desktop (Win7)"
-msgstr "Exibir a área de trabalho (Win7)"
+msgstr "أظهر سطح المكتب (Win7)"
 
 #: ../metadata.json
 msgid "Show the Plasma desktop"
-msgstr "Mostra a área de trabalho do Plasma"
+msgstr "أظهر سطح مكتب بلازما"
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "Geral"
+msgstr "عامّ"
 
 #: ../contents/ui/CommandController.qml
 msgctxt "@action:button"
@@ -39,15 +39,15 @@ msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Look"
-msgstr "Aparência"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Size:"
-msgstr "Tamanho:"
+msgstr "الحجم:"
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "px"
-msgstr "px"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 #, c-format
@@ -56,23 +56,23 @@ msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Edge Color:"
-msgstr "Cor da borda:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Hovered Color:"
-msgstr "Cor de foco:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Pressed Color:"
-msgstr "Cor de clique:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Click"
-msgstr "Clique"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Run Command"
-msgstr "Executar comando:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Note that in openSUSE, <b>qdbus</b> is automatically replaced with <b>qdbus6</b>."
@@ -80,31 +80,31 @@ msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Mouse Wheel"
-msgstr "Roda do mouse"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Run Commands"
-msgstr "Executar comandos"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Scroll Up:"
-msgstr "Rolar para cima:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Scroll Down:"
-msgstr "Rolar para baixo:"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Volume (No UI) (amixer)"
-msgstr "Volume (Sem UI) (amixer)"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Volume (UI) (qdbus)"
-msgstr "Volume (Com UI) (qdbus)"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Switch Desktop (qdbus)"
-msgstr "Alternar área de trabalho (qdbus)"
+msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Peek"
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Enable"
-msgstr "Ativar"
+msgstr "مكّن"
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Peek threshold:"
@@ -133,6 +133,3 @@ msgstr ""
 #: ../contents/ui/main.qml
 msgid "Lock Widgets"
 msgstr ""
-
-#~ msgid "<b>Version:</b> %1"
-#~ msgstr "<b>Versão:</b> %1"
