@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
 SRC_DIR="$(cd $(dirname $0) && pwd)"
+ROOT_UID=0
 
 THEME_NAME=Fluent
 THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-teal')
@@ -11,14 +12,25 @@ round=
 solid=
 
 # Destination directory
-AURORAE_DIR="$HOME/.local/share/aurorae/themes"
-SCHEMES_DIR="$HOME/.local/share/color-schemes"
-PLASMA_DIR="$HOME/.local/share/plasma/desktoptheme"
-LOOKFEEL_DIR="$HOME/.local/share/plasma/look-and-feel"
-KVANTUM_DIR="$HOME/.config/Kvantum"
-WALLPAPER_DIR="$HOME/.local/share/wallpapers"
-PLASMOIDS_DIR="$HOME/.local/share/plasma/plasmoids"
-LAYOUT_DIR="$HOME/.local/share/plasma/layout-templates"
+if [ "$UID" -eq "$ROOT_UID" ]; then
+  AURORAE_DIR="/usr/share/aurorae/themes"
+  SCHEMES_DIR="/usr/share/color-schemes"
+  PLASMA_DIR="/usr/share/plasma/desktoptheme"
+  LOOKFEEL_DIR="/usr/share/plasma/look-and-feel"
+  KVANTUM_DIR="/usr/share/Kvantum"
+  WALLPAPER_DIR="/usr/share/wallpapers"
+  PLASMOIDS_DIR="/usr/share/plasma/plasmoids"
+  LAYOUT_DIR="/usr/share/plasma/layout-templates"
+else
+  AURORAE_DIR="$HOME/.local/share/aurorae/themes"
+  SCHEMES_DIR="$HOME/.local/share/color-schemes"
+  PLASMA_DIR="$HOME/.local/share/plasma/desktoptheme"
+  LOOKFEEL_DIR="$HOME/.local/share/plasma/look-and-feel"
+  KVANTUM_DIR="$HOME/.config/Kvantum"
+  WALLPAPER_DIR="$HOME/.local/share/wallpapers"
+  PLASMOIDS_DIR="$HOME/.local/share/plasma/plasmoids"
+  LAYOUT_DIR="$HOME/.local/share/plasma/layout-templates"
+fi
 
 # COLORS
 CDEF=" \033[0m"                                     # default color
