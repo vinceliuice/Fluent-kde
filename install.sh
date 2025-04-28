@@ -66,7 +66,6 @@ usage() {
 Usage: $0 [OPTION]...
 
 OPTIONS:
-  -n, --name NAME         Specify theme name (Default: $THEME_NAME)
   -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|teal|all] (Default: blue)
   -c, --color VARIANT     Specify color variant(s) [standard|light|dark] (Default: All variants)s)
   --round VARIANT         Specify round variant
@@ -87,9 +86,8 @@ EOF
 cp -rf "${SRC_DIR}"/configs/Xresources "$HOME"/.Xresources
 
 install() {
-  local name="$1"
-  local theme="$2"
-  local color="$3"
+  local theme="$1"
+  local color="$2"
 
   case "${theme}" in
     -purple)
@@ -136,89 +134,85 @@ install() {
   [[ "$color" == '-dark' ]] && local ELSE_DARK="$color"
   [[ "$color" == '-light' ]] && local ELSE_LIGHT="$color"
 
-  [[ -d ${AURORAE_DIR}/${name}${round}${color}${solid} ]]                              && rm -rf ${AURORAE_DIR}/${name}${round}${color}${solid}
-  [[ -d ${AURORAE_DIR}/${name}${round}${color}{'','-normal'} ]]                        && rm -rf ${AURORAE_DIR}/${name}${round}${color}{'','-normal'}
-  [[ -d ${PLASMA_DIR}/${name}${round}${theme}${color}${solid} ]]                       && rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
-  [[ -f ${SCHEMES_DIR}/${name}${ctheme}${ccolor}.colors ]]                             && rm -rf ${name}${ctheme}${ccolor}.colors
-  [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid} ]] && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
-  [[ -d ${KVANTUM_DIR}/${name}${round}${theme}${solid} ]]                              && rm -rf ${KVANTUM_DIR}/${name}${round}${theme}${solid}
-  [[ -d ${WALLPAPER_DIR}/${name}${theme} ]]                                            && rm -rf ${WALLPAPER_DIR}/${name}${theme}
-  [[ -d ${WALLPAPER_DIR}/${name}${round}${color} ]]                                    && rm -rf ${WALLPAPER_DIR}/${name}${round}${color}
+  [[ -d ${AURORAE_DIR}/${THEME_NAME}${round}${color}${solid} ]]                               && rm -rf ${AURORAE_DIR}/${THEME_NAME}${round}${color}${solid}
+  [[ -d ${AURORAE_DIR}/${THEME_NAME}${round}${color}{'','-normal'} ]]                         && rm -rf ${AURORAE_DIR}/${THEME_NAME}${round}${color}{'','-normal'}
+  [[ -d ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid} ]]                        && rm -rf ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}
+  [[ -f ${SCHEMES_DIR}/${THEME_NAME}${ctheme}${ccolor}.colors ]]                              && rm -rf ${THEME_NAME}${ctheme}${ccolor}.colors
+  [[ -d ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid} ]] && rm -rf ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}
+  [[ -d ${KVANTUM_DIR}/${THEME_NAME}${round}${theme}${solid} ]]                               && rm -rf ${KVANTUM_DIR}/${THEME_NAME}${round}${theme}${solid}
+  [[ -d ${WALLPAPER_DIR}/${THEME_NAME}${theme} ]]                                             && rm -rf ${WALLPAPER_DIR}/${THEME_NAME}${theme}
+  [[ -d ${WALLPAPER_DIR}/${THEME_NAME}${round}${color} ]]                                     && rm -rf ${WALLPAPER_DIR}/${THEME_NAME}${round}${color}
 
-  prompt -i "Installing ${name}${round}${theme}${color}..."
+  prompt -i "Installing ${THEME_NAME}${round}${theme}${color}..."
 
   if [[ "$round" == '-round' ]]; then
-    cp -r ${SRC_DIR}/aurorae/${name}${round}${color}${solid}                           ${AURORAE_DIR}
-    cp -r ${SRC_DIR}/aurorae/${name}${round}${color}-normal                            ${AURORAE_DIR}
+    cp -r ${SRC_DIR}/aurorae/${THEME_NAME}${round}${color}${solid}                            ${AURORAE_DIR}
+    cp -r ${SRC_DIR}/aurorae/${THEME_NAME}${round}${color}-normal                             ${AURORAE_DIR}
   else
-    cp -r ${SRC_DIR}/aurorae/${name}${color}                                           ${AURORAE_DIR}
+    cp -r ${SRC_DIR}/aurorae/${THEME_NAME}${color}                                            ${AURORAE_DIR}
   fi
 
-  cp -r ${SRC_DIR}/wallpaper/${name}${theme}                                           ${WALLPAPER_DIR}
+  cp -r ${SRC_DIR}/wallpaper/${THEME_NAME}${theme}                                            ${WALLPAPER_DIR}
 
   if [[ "$round" == '-round' ]]; then
-    cp -r ${SRC_DIR}/wallpaper/${name}${round}${color}                                 ${WALLPAPER_DIR}
+    cp -r ${SRC_DIR}/wallpaper/${THEME_NAME}${round}${color}                                  ${WALLPAPER_DIR}
   fi
 
-  mkdir -p                                                                             ${KVANTUM_DIR}/${name}${round}${theme}${solid}
-  cp -r ${SRC_DIR}/Kvantum/Fluent${round}${theme}${solid}/*                            ${KVANTUM_DIR}/${name}${round}${theme}${solid}
+  mkdir -p                                                                                    ${KVANTUM_DIR}/${THEME_NAME}${round}${theme}${solid}
+  cp -r ${SRC_DIR}/Kvantum/${THEME_NAME}${round}${theme}${solid}/*                            ${KVANTUM_DIR}/${THEME_NAME}${round}${theme}${solid}
 
   if [[ "$color" != '' ]]; then
-    cp -r ${SRC_DIR}/color-schemes/${name}${ctheme}${ccolor}.colors                    ${SCHEMES_DIR}
-    mkdir -p                                                                           ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
-    cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}${theme}${color}/* ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}
+    cp -r ${SRC_DIR}/color-schemes/${THEME_NAME}${ctheme}${ccolor}.colors                     ${SCHEMES_DIR}
+    mkdir -p                                                                                  ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}
+    cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}/* ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}
 
-    mkdir -p                                                                           ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/dialogs/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/dialogs
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/widgets
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}/translucent/*     ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/translucent
+    mkdir -p                                                                                  ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}/*                              ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}${ELSE_LIGHT}/dialogs/*.svgz    ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/dialogs
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}${ELSE_LIGHT}/widgets/*.svgz    ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/widgets
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}${ELSE_LIGHT}/translucent/*     ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/translucent
 
     if [[ "$theme" != '' ]]; then
-      sed -i "s|defaultWallpaperTheme=Fluent|defaultWallpaperTheme=Fluent${theme}|"    ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
+      sed -i "s|defaultWallpaperTheme=${THEME_NAME}|defaultWallpaperTheme=${THEME_NAME}${theme}|" ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
     fi
 
-    cp -r ${SRC_DIR}/color-schemes/Fluent${ctheme}${ccolor}.colors                     ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/colors
+    cp -r ${SRC_DIR}/color-schemes/${THEME_NAME}${ctheme}${ccolor}.colors                     ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/colors
   else
-    mkdir -p                                                                           ${PLASMA_DIR}/${name}${round}${solid}
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}/*                              ${PLASMA_DIR}/${name}${round}${solid}
-    mkdir -p                                                                           ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${solid}
-    cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${round}/*     ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${solid}
+    mkdir -p                                                                                  ${PLASMA_DIR}/${THEME_NAME}${round}${solid}
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}/*                              ${PLASMA_DIR}/${THEME_NAME}${round}${solid}
+    mkdir -p                                                                                  ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${solid}
+    cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${THEME_NAME}${round}/*      ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${solid}
   fi
 
-  sed -i "s|Name=Fluent${round}|Name=${name}${round}${theme}${color}${solid}|"         ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
+  sed -i "s|Name=${THEME_NAME}${round}|Name=${THEME_NAME}${round}${theme}${color}${solid}|"   ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
 
   if [[ "$solid" == '-solid' ]]; then
     # plasma theme
-    cp -r ${SRC_DIR}/plasma/desktoptheme/Fluent${round}${ELSE_LIGHT}${solid}/*         ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}
-    sed -i "s|enabled=true|enabled=false|"                                             ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
-    rm -rf ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/{solid,translucent}
+    cp -r ${SRC_DIR}/plasma/desktoptheme/${THEME_NAME}${round}${ELSE_LIGHT}${solid}/*         ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}
+    sed -i "s|enabled=true|enabled=false|"                                                    ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
+    rm -rf ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/{solid,translucent}
     # global theme
-    sed -i "s|Name=${name}${round}${theme}${color}|Name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
-    sed -i "s|Name=com.github.vinceliuice.${name}${round}${theme}${color}|Name=com.github.vinceliuice.${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/metadata.desktop
+    sed -i "s|Name=${THEME_NAME}${round}${theme}${color}|Name=${THEME_NAME}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
+    sed -i "s|Name=com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}|Name=com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
     if [[ "$round" == '-round' ]]; then
-      sed -i "s|theme=__aurorae__svg__${name}${round}${color}|theme=__aurorae__svg__${name}${round}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
+      sed -i "s|theme=__aurorae__svg__${THEME_NAME}${round}${color}|theme=__aurorae__svg__${THEME_NAME}${round}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}/contents/defaults
     fi
-    sed -i "s|name=${name}${round}${theme}${color}|name=${name}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${name}${round}${theme}${color}${solid}/contents/defaults
+    sed -i "s|name=${THEME_NAME}${round}${theme}${color}|name=${THEME_NAME}${round}${theme}${color}${solid}|" ${LOOKFEEL_DIR}/com.github.vinceliuice.${THEME_NAME}${round}${theme}${color}${solid}/contents/defaults
   fi
 
   if [[ "$round" == '-round' ]]; then
-    sed -i "s|defaultWallpaperTheme=Fluent|defaultWallpaperTheme=Fluent${round}${color}|" ${PLASMA_DIR}/${name}${round}${theme}${color}${solid}/metadata.desktop
+    sed -i "s|defaultWallpaperTheme=${THEME_NAME}|defaultWallpaperTheme=${THEME_NAME}${round}${color}|" ${PLASMA_DIR}/${THEME_NAME}${round}${theme}${color}${solid}/metadata.desktop
   fi
 }
 
 install_common() {
-  cp -r ${SRC_DIR}/plasma/plasmoids/*                                                  ${PLASMOIDS_DIR}
-  cp -r ${SRC_DIR}/plasma/layout-templates/*                                           ${LAYOUT_DIR}
-  cp -r ${SRC_DIR}/Kvantum/Fluent-round${solid}                                        ${KVANTUM_DIR}
+  cp -r ${SRC_DIR}/plasma/plasmoids/*                                                         ${PLASMOIDS_DIR}
+  cp -r ${SRC_DIR}/plasma/layout-templates/*                                                  ${LAYOUT_DIR}
+  cp -r ${SRC_DIR}/Kvantum/${THEME_NAME}-round${solid}                                        ${KVANTUM_DIR}
 }
 
 while [[ "$#" -gt 0 ]]; do
   case "${1:-}" in
-    -n|--name)
-      name="${1}"
-      shift
-      ;;
     --round)
       round='-round'
       prompt -i "Install rounded version."
@@ -338,7 +332,7 @@ fi
 
 for theme in "${themes[@]}"; do
   for color in "${colors[@]}"; do
-    install "${_name:-$THEME_NAME}" "$theme" "$color"
+    install "$theme" "$color"
   done
 done
 
